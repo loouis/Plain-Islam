@@ -1,13 +1,200 @@
-/*
-	Theme Name: Plain Islam
-	Theme URI: http://plainislam.com
-	Description: Plain Islam
-	Version: 2.0
-	Author: Breakthrough
 
-	License: MIT
-	License URI: http://opensource.org/licenses/mit-license.php
-*/
+
+.wrapper{
+	max-width:1280px;
+	padding:0 20px;
+	margin: 0 auto;
+	position:relative;
+}
+
+section{
+	width:100%;
+	position:relative;
+	padding:80px 0 100px 0;
+	@include clearfix;
+}
+
+.button{
+	padding:12px 28px;
+	text-align:center;
+	display: inline-block;
+	margin: 30px auto;
+	border-radius:6px;
+	background:$swans-down;
+
+	&:hover{
+		background:lighten($swans-down, 4%);
+	}
+}
+
+header{
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	height:75px;
+	background:white;
+	float:left;
+
+	.logo{
+		float:left;
+		width:200px;
+		height:80px;
+		background:red;
+	}
+
+	nav{
+		float:right;
+		.menu{
+			ul{
+				li{
+					padding:27px 20px;
+					display: inline-block;
+
+					a{
+						display:block;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+section#hero-slider{
+	width:100%;
+	height:600px;
+	background:grey;
+
+}
+
+
+section#bite-size{
+	background:lighten($swans-down,5%);
+
+	h2{
+
+	}
+	
+	p{
+		max-width:60%;
+		margin:0 auto;
+		text-align: center;
+		margin-bottom:40px;
+	}
+
+	ul{
+		li{
+			width:23.875%;
+			height:200px;
+			margin:0.8% 1.5%;
+			background:red;
+			float:left;
+			border-radius:6px;
+
+			&:nth-child(1n){
+				margin-left:0;
+			}
+
+			&:nth-child(4n){
+				margin-right:0;
+			}
+		}
+	}
+
+}
+
+
+
+section#home-video-intro{
+	background: url(./img/video-bg-img.jpg) 50% 50% no-repeat;
+	background-size:cover;
+	padding: 140px 0 140px 0;
+
+	.play-button{
+		width:80px;
+		height:80px;
+		margin: 0 auto;
+	}
+
+	p{
+		color:white;
+		text-align: center;
+		font-size:18px;
+		margin-top:20px;
+		text-shadow:1px 1px 1px black
+	}
+}
+
+
+section#in-depth{
+	width:100%;
+	h3{
+		text-align: center;
+	}
+	p{
+		text-align: center;
+	}
+
+	ul{
+		margin-top:40px;
+
+		li{
+			border-bottom:1px solid #f7f7f7;
+			padding:30px 0 38px 0;
+
+			&:hover{
+				background:$swans-down;
+			}
+
+			h4{
+				text-align: center;
+				padding-bottom:10px;
+			}
+			p{
+				text-align: center;
+			}
+		}
+	}
+	p.small-text{
+		max-width:40%;
+		margin: 0 auto;
+	}
+}
+
+
+footer{
+	position:relative;
+	padding:40px 0;
+	width:100%;
+	background:#f7f7f7;
+	text-align:center;
+	
+	.scroll-to-top{
+		width:40px;
+		opacity:0.2;
+		padding:6px 5px;
+		height:40px;
+		background:rgba(0,0,0,0.23);
+		border-radius:50%;
+		position:absolute;
+		right:50px;
+		top:30px;
+		cursor:pointer;
+
+		&:hover{
+			background:$swans-down;
+			opacity:1;
+		}
+
+	}
+
+}
+
+
+
+
 
 
 
