@@ -29,9 +29,11 @@ h1,h2,h3,h4,h5,p,a{
 
 
 h1{
-  font-size: em(28px);
+  font-size: em(42px);
   letter-spacing:3px;
   font-weight:100;
+
+  text-shadow: 1px 1px 1px black;
   
   // @include screen (medium){
   //   font-size: em(62px);
@@ -53,12 +55,12 @@ h3{
 }
 
 h4{
-  font-size: em(32px);
+  font-size: em(24px);
   font-weight:300;
 }
 
 p{
-  
+  padding-bottom:20px;
 }
 
 p.small-text{

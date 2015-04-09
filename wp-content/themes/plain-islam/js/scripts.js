@@ -4,11 +4,14 @@
 		
 		'use strict';
 		
+		//View more bite-size on the homepage
 		$('.bite-size__view-more-button').click(function(e){
 			e.preventDefault();
 			$('section#bite-size').addClass('auto-height');
 			$('.load-more-container, .bite-size__view-more-button').fadeOut();
 		});
+
+		
 		
 	});
 	

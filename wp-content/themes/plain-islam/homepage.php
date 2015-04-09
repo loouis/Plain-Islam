@@ -2,7 +2,7 @@
 
 	<main role="main">
 		
-		<section id="hero-slider">
+		<section id="hero-slider" class="top-section">
 			<div class="wrapper">
 				<ul class="bx-slider">
 					<li></li>

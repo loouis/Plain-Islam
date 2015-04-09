@@ -6,12 +6,18 @@
 	margin: 0 auto;
 	position:relative;
 }
+.wrapper--small{
+	max-width:800px;
+}
 
 section{
 	width:100%;
 	position:relative;
 	padding:80px 0 100px 0;
 	@include clearfix;
+}
+.top-section{
+	margin-top:90px;
 }
 
 .button{
@@ -225,6 +231,27 @@ section#in-depth{
 	p.small-text{
 		max-width:40%;
 		margin: 0 auto;
+	}
+}
+
+
+/* ----------------------------------------------------------------- Single page template */
+
+section{
+	
+}
+
+
+.header-hero-image{
+	width:100%;
+	background:red;
+	height:200px;
+	
+	h1{
+		padding-top:70px;
+		font-weight: 300;
+		color:white;
+		text-align:center;
 	}
 }
 
