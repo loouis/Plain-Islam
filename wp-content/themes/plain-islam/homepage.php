@@ -15,7 +15,7 @@
 		<section id="bite-size">
 			<div class="wrapper">
 				<h2>Bite-size</h2>
-				<p>This website aims to provide information on Islam and Muslims to non-specialist audiences in a way that is clear, simple and accessible. Begin here by clicking on any topic.</p>
+				<p>This website aims to provide information on Islam and Muslims to non-specialist audiences in a way that is clear, simple and accessible. Begin here by clicking on any topic.</p>				
 				<ul>
 					<li>
 						<img src="" alt="">
@@ -142,7 +142,13 @@
 						<div class="bite-size__title"></div>
 					</li>
 				</ul>
+
 			</div>
+			<div class="load-more-container">
+				<div class="load-more-container load-more-container__filler"></div>
+			</div>
+			<a href="#" class="bite-size__view-more-button button">view more</a>
+
 		</section><!-- //bite-size -->
 
 		<section id="home-video-intro">

@@ -17,6 +17,14 @@
         <script src="//use.typekit.net/vcf6kco.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+		<![endif]-->
+
 	</head>
 	<body <?php body_class(); ?>>
 
