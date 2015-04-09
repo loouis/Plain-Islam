@@ -324,10 +324,11 @@ h3 {
 h4 {
   font-size: 1.5em;
   font-weight: 300;
+  padding-bottom: 10px;
 }
 
 p {
-  padding-bottom: 20px;
+  line-height: 24px;
 }
 
 p.small-text {
@@ -448,18 +449,38 @@ section#bite-size ul:after {
   clear: both;
 }
 section#bite-size ul li {
+  position: relative;
   width: 23.875%;
   height: 200px;
   margin: 0.8% 1.5%;
   background: red;
   float: left;
   border-radius: 6px;
+  overflow: hidden;
 }
 section#bite-size ul li:nth-child(1n) {
   margin-left: 0;
 }
 section#bite-size ul li:nth-child(4n) {
   margin-right: 0;
+}
+section#bite-size ul li .bite-size__title {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  padding: 12px 0;
+  -webkit-transform: translate(0px, 150px);
+          transform: translate(0px, 150px);
+  transition: all .3s ease-in-out;
+}
+section#bite-size ul li:hover .bite-size__title {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  padding-top: 90px;
 }
 section#bite-size .bite-size__view-more-button {
   position: absolute;
@@ -541,16 +562,52 @@ section#in-depth p.small-text {
 }
 
 /* ----------------------------------------------------------------- Single page template */
-.header-hero-image {
+body.page-template-template_single section, body.page-template-Bite-size-preview section {
+  padding-top: 60px;
+}
+body.page-template-template_single .wrapper--small p, body.page-template-Bite-size-preview .wrapper--small p {
+  padding-bottom: 20px;
+}
+body.page-template-template_single .header-hero-image, body.page-template-Bite-size-preview .header-hero-image {
   width: 100%;
   background: red;
   height: 200px;
 }
-.header-hero-image h1 {
+body.page-template-template_single .header-hero-image h1, body.page-template-Bite-size-preview .header-hero-image h1 {
   padding-top: 70px;
   font-weight: 300;
   color: white;
   text-align: center;
+}
+body.page-template-template_single ul, body.page-template-Bite-size-preview ul {
+  margin-left: 20px;
+}
+body.page-template-template_single ul li, body.page-template-Bite-size-preview ul li {
+  list-style-type: disc;
+}
+body.page-template-template_single h4, body.page-template-Bite-size-preview h4 {
+  margin-top: 20px;
+}
+
+body.page-template-Bite-size-preview section#bite-size {
+  margin-top: 90px;
+  height: auto;
+}
+body.page-template-Bite-size-preview .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body.page-template-Bite-size-preview ul {
+  margin-left: 20px;
+}
+body.page-template-Bite-size-preview ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body.page-template-Bite-size-preview ul li {
+  list-style-type: none;
 }
 
 footer {
