@@ -11,6 +11,13 @@
 			$('.load-more-container, .bite-size__view-more-button').fadeOut();
 		});
 
+		//Open
+
+		//close contact lightbox
+		$('button.close').click(function(){
+			$('section#lightbox').fadeOut();
+		});
+
 		
 		
 	});

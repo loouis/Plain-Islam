@@ -33,6 +33,12 @@ section{
 	}
 }
 
+button{
+	background: none;
+	outline: none;
+	border: none;
+}
+
 header{
 	width:100%;
 	position:fixed;
@@ -391,6 +397,172 @@ footer{
 
 
 
+/* ----------------------------------------------------------------- Lightbox */
+
+
+section#lightbox{
+	display:none;
+	background:rgba(0,0,0,0.8);
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+	position:fixed;
+	z-index:999;
+
+	color:black;
+
+	button.close{
+		position:absolute;
+		top:20px;
+		right:20px;
+	}
+
+	h1{
+		margin-bottom:20px;
+		text-align: left;
+		color:black;
+		text-shadow:none;
+	}
+
+	p{
+		padding-bottom:0;
+	}
+
+	.wrapper--small{
+		position:relative;
+		margin: 0 auto;
+		padding:30px 40px;
+		background:white;
+
+		.address{
+
+		}
+		.left-column{
+			float:left;
+			width:55%;
+			.address{
+				padding-bottom:20px;
+			}
+		}
+
+		.right-column{
+			float:right;
+			width:40%;
+			padding-top:70px;
+
+		}	
+	}
+	a{
+		display:inline-block;
+		text-decoration:underline;
+	}
+
+}
+
+
+
+/* ----------------------------------------------------------------- Override contact form styling */
+
+
+input, textarea, .wpcf7-submit{
+  width:100%;
+  font-family:$b-font;
+  padding:12px;
+  outline: 0;
+    border: 0;
+    font-size:14px;
+    background:none;
+    color:white;
+    border: 1px solid #aeaeae;
+    resize: vertical;
+    box-shadow: none !important;
+    //iPhone overrride
+    -webkit-border-radius:6px; 
+    
+    @include screen (medium){
+      margin: 10px 0;
+      transition: letter-spacing .3s ease-in-out;
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+      color:    black !important;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color:    black !important;
+     opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:    black !important;
+     opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+     color:    black !important;
+  }
+
+.wpcf7-submit:hover{
+  letter-spacing:1px;
+  cursor:pointer;
+}
+
+div.wpcf7{
+  font-family:$b-font;
+}
+
+.wpcf7-form input[type="submit"] {
+  background: none;
+  outline: 0;
+  margin-top:5px;
+  color:white;
+  font-family:$b-font;
+  border: 0;
+  background:$shadow-green;
+  color:white;
+  padding:14px 0;
+  
+  text-align: center;
+  
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+
+}
+
+ .ajax-loader{
+    display:none !important;
+  }
+
+.wpcf7-form, .sent{
+  position:relative !important;
+  height:520px;
+  
+  .wpcf7-response-output{
+    position:absolute !important;
+    bottom:68px !important;
+    width:100% !important;
+    color:white !important;
+    color: white !important;
+      text-align: center !important;
+      padding: 10px 0 !important;
+      margin: 0 !important;
+      background: #00d67e !important;
+      border: none !important;
+  
+      @include screen (medium){
+        bottom:61px !important;
+      }
+  }
+  
+}
+
+button{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
 
 

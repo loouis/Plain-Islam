@@ -1,3 +1,6 @@
+
+
+
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
@@ -17,7 +20,26 @@
 		</div>
 		<!-- /wrapper -->
 
+		<section id="lightbox">
+
+			<button class="close">
+				<img src="<?php bloginfo(template_url);?>/img/close-button.png" alt="">
+			</button>
+
+			<div class="wrapper--small">
+
+				<div class="contact-details">
+					 <?php echo do_shortcode('[contact-form-7 id="35" title="Lightbox contact form"]')?>  
+				</div>
+
+			</div>
+		</section>
+
+
 		<?php wp_footer(); ?>
+
+
+
 
 		<!-- analytics -->
 		<script>
