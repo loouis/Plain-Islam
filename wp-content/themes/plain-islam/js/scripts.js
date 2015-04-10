@@ -11,7 +11,19 @@
 			$('.load-more-container, .bite-size__view-more-button').fadeOut();
 		});
 
-		//Open
+		//Init bxslider
+		$('ul.bx-slider').bxSlider({
+			auto: true,
+			mode: 'horizontal',
+			pause: 7000,
+
+			// nextSelector: '#slider-next',
+			// prevSelector: '#slider-prev',
+			// nextText: 'Onward →',
+			// prevText: '← Go back'
+		});
+
+		//Open lightbox
 
 		//close contact lightbox
 		$('button.close').click(function(){

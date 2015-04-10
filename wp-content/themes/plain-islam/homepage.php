@@ -3,13 +3,65 @@
 	<main role="main">
 		
 		<section id="hero-slider" class="top-section">
-			<div class="wrapper">
-				<ul class="bx-slider">
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
+			<ul class="bx-slider">
+				<li>
+					<div class="wrapper">
+						<div class="text-slider">
+							<blockquote>"None of you truly believes until he loves for his brother what he loves for himself"</blockquote>
+							<cite>
+								<span class="quotes-icon">
+									
+								</span>
+								<p>Prophet Muhammad</p>
+							</cite>
+						</div><!-- /text-slider -->
+
+						<div class="slider-image">
+							
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="wrapper">
+						<div class="text-slider">
+							<blockquote>"None of you truly believes until he loves for his brother what he loves for himself"</blockquote>
+								<cite>
+									<span class="quotes-icon">
+										
+									</span>
+									<p>Prophet Muhammad</p>
+								</cite>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="wrapper">
+						<div class="text-slider">
+							<blockquote>"None of you truly believes until he loves for his brother what he loves for himself"</blockquote>
+								<cite>
+									<span class="quotes-icon">
+										
+									</span>
+									<p>Prophet Muhammad</p>
+								</cite>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="wrapper">
+						<div class="text-slider">
+							<blockquote>"None of you truly believes until he loves for his brother what he loves for himself"</blockquote>
+								<cite>
+									<span class="quotes-icon">
+										
+									</span>
+									<p>Prophet Muhammad</p>
+								</cite>
+						</div>
+					</div>
+				</li>
+			</ul>
+	
 		</section>
 
 		<section id="bite-size">

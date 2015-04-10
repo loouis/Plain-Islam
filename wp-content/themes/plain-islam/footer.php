@@ -35,6 +35,8 @@
 			</div>
 		</section>
 
+		<script src="<?php bloginfo(template_url);?>/js/lib/bxslider.js"></script>
+
 
 		<?php wp_footer(); ?>
 
