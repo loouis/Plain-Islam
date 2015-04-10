@@ -20,7 +20,7 @@
 		</div>
 		<!-- /wrapper -->
 
-		<section id="lightbox">
+		<section id="lightbox" class="lightbox contact-lightbox">
 
 			<button class="close">
 				<img src="<?php bloginfo(template_url);?>/img/close-button.png" alt="">
@@ -36,12 +36,9 @@
 		</section>
 
 		<script src="<?php bloginfo(template_url);?>/js/lib/bxslider.js"></script>
-
+		<script src="<?php bloginfo(template_url);?>/js/lib/fitvids.js"></script>
 
 		<?php wp_footer(); ?>
-
-
-
 
 		<!-- analytics -->
 		<script>
