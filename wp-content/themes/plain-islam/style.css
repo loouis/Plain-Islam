@@ -683,7 +683,6 @@ section#bite-size ul:after {
 section#bite-size ul li {
   position: relative;
   width: 23.875%;
-  height: 200px;
   margin: 0.8% 1.5%;
   background: red;
   float: left;
