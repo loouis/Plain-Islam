@@ -341,6 +341,10 @@ blockquote {
   line-height: 1.2em;
 }
 
+em {
+  font-style: italic;
+}
+
 cite {
   position: relative;
   font-size: 1.125em;
@@ -562,30 +566,31 @@ section#in-depth p.small-text {
 }
 
 /* ----------------------------------------------------------------- Single page template */
-body.page-template-template_single section, body.page-template-Bite-size-preview section {
-  padding-top: 60px;
-}
-body.page-template-template_single .wrapper--small p, body.page-template-Bite-size-preview .wrapper--small p {
+.wrapper--small p {
   padding-bottom: 20px;
 }
-body.page-template-template_single .header-hero-image, body.page-template-Bite-size-preview .header-hero-image {
+
+.header-hero-image {
   width: 100%;
   background: red;
   height: 200px;
 }
-body.page-template-template_single .header-hero-image h1, body.page-template-Bite-size-preview .header-hero-image h1 {
+.header-hero-image h1 {
   padding-top: 70px;
   font-weight: 300;
   color: white;
   text-align: center;
 }
-body.page-template-template_single ul, body.page-template-Bite-size-preview ul {
+
+body.page-template-template_single ul, body.page-template-Bite-size-preview ul, body.page-template-template-in-depth-single ul {
   margin-left: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
-body.page-template-template_single ul li, body.page-template-Bite-size-preview ul li {
+body.page-template-template_single ul li, body.page-template-Bite-size-preview ul li, body.page-template-template-in-depth-single ul li {
   list-style-type: disc;
 }
-body.page-template-template_single h4, body.page-template-Bite-size-preview h4 {
+body.page-template-template_single h4, body.page-template-Bite-size-preview h4, body.page-template-template-in-depth-single h4 {
   margin-top: 20px;
 }
 
@@ -608,6 +613,42 @@ body.page-template-Bite-size-preview ul:after {
 }
 body.page-template-Bite-size-preview ul li {
   list-style-type: none;
+}
+
+/* ----------------------------------------------------------------- Single in-depth template */
+body.page-template-template-in-depth-single {
+  background: #f7f7f7;
+}
+body.page-template-template-in-depth-single section {
+  padding-top: 60px;
+}
+
+.author-details {
+  width: 100%;
+  background: white;
+  border-bottom: 2px solid #92c7b1;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.author-details:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.author-details .person_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  float: left;
+}
+.author-details .person-name-title {
+  padding-top: 10px;
+}
+.author-details .person-name-title .person_name {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 footer {

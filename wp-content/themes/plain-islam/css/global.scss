@@ -260,33 +260,32 @@ section#in-depth{
 /* ----------------------------------------------------------------- Single page template */
 
 
-body.page-template-template_single, body.page-template-Bite-size-preview{
-
-	section{
-		padding-top:60px;
+.wrapper--small{
+	p{
+		padding-bottom:20px;
 	}
+}
+
+.header-hero-image{
+	width:100%;
+	background:red;
+	height:200px;
 	
-	.wrapper--small{
-		p{
-			padding-bottom:20px;
-		}
+	h1{
+		padding-top:70px;
+		font-weight: 300;
+		color:white;
+		text-align:center;
 	}
+}
 
-	.header-hero-image{
-		width:100%;
-		background:red;
-		height:200px;
-		
-		h1{
-			padding-top:70px;
-			font-weight: 300;
-			color:white;
-			text-align:center;
-		}
-	}
+
+body.page-template-template_single, body.page-template-Bite-size-preview, body.page-template-template-in-depth-single{
 
 	ul{
 		margin-left:20px;
+		margin-left:40px;
+		margin-bottom:20px;
 
 		li{
 			list-style-type: disc;
@@ -314,6 +313,48 @@ body.page-template-Bite-size-preview{
 		@include clearfix;
 		li{
 			list-style-type: none;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------- Single in-depth template */
+
+
+body.page-template-template-in-depth-single{
+	background:#f7f7f7;
+
+	section{
+		padding-top:60px;
+	}
+}
+
+.author-details{
+	width:100%;
+	background:white;
+	border-bottom:2px solid $shadow-green;
+	padding:30px;
+	@include clearfix;
+	margin-bottom:30px;
+
+	.person_image{
+		width:100px;
+		height:100px;
+		border-radius:50%;
+		overflow:hidden;
+		margin-right:20px;
+		float:left;
+	}
+	.person-name-title{
+		// float:left;
+		padding-top:10px;
+
+		.person_name{
+			font-size:20px;
+			font-weight: 300;
+		}
+		.person_title{
+			
 		}
 	}
 }
