@@ -451,11 +451,25 @@ footer{
 }
 
 
+/* ----------------------------------------------------------------- Homepage video lightbox */
+
+
+section#video-lightbox{
+	
+	.wrapper{
+		margin: 0 auto;
+		height:600px;
+		background:red;
+	}
+
+
+}
+
 
 /* ----------------------------------------------------------------- Lightbox */
 
 
-section#lightbox{
+.lightbox{
 	display:none;
 	background:rgba(0,0,0,0.8);
 	width:100%;
@@ -465,14 +479,18 @@ section#lightbox{
 	right:0;
 	position:fixed;
 	z-index:999;
-
 	color:black;
+	padding-top:0;
+	padding-bottom:0;
 
 	button.close{
 		position:absolute;
-		top:20px;
-		right:20px;
+		top:30px;
+		right:30px;
 	}
+}
+
+section#lightbox{
 
 	h1{
 		margin-bottom:20px;
