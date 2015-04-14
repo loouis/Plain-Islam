@@ -565,6 +565,15 @@ cite {
 .wrapper--small {
   max-width: 800px;
 }
+.wrapper--small h1 {
+  text-shadow: none;
+  padding-bottom: 10px;
+}
+.wrapper--small span.underline {
+  margin: auto;
+  float: left !important;
+  clear: both;
+}
 
 section {
   width: 100%;
@@ -642,6 +651,9 @@ header nav ul li {
 }
 header nav ul li a {
   display: block;
+}
+header nav ul li:nth-child(5) {
+  padding-right: 0;
 }
 
 section#hero-slider {
@@ -915,7 +927,7 @@ body.page-template-Bite-size-preview .wrapper:after {
   clear: both;
 }
 body.page-template-Bite-size-preview ul {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 body.page-template-Bite-size-preview ul:after {
   content: "";
@@ -966,7 +978,8 @@ footer {
   position: relative;
   padding: 40px 0;
   width: 100%;
-  background: #f7f7f7;
+  background: #747474;
+  color: white;
   text-align: center;
 }
 footer .scroll-to-top {
@@ -1044,6 +1057,53 @@ section#lightbox .wrapper--small .right-column {
 section#lightbox a {
   display: inline-block;
   text-decoration: underline;
+}
+
+.text-container {
+  clear: both;
+  margin-top: 20px;
+}
+
+.m-top {
+  margin-top: 60px;
+}
+
+.nex-prev-posts {
+  margin-top: 60px;
+  background: white;
+  width: 100%;
+}
+.nex-prev-posts:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nex-prev-posts ul.single-article-next-prev-nav {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.nex-prev-posts ul.single-article-next-prev-nav li {
+  width: 33.3%;
+  float: left;
+  padding: 40px 0;
+}
+.nex-prev-posts ul.single-article-next-prev-nav li:nth-child(3) {
+  text-align: right;
+}
+.nex-prev-posts ul.single-article-next-prev-nav li:nth-child(2) {
+  text-align: center;
+}
+.nex-prev-posts ul.single-article-next-prev-nav li a {
+  display: block;
+}
+.nex-prev-posts ul.single-article-next-prev-nav li.next-post {
+  text-align: right !important;
+}
+
+.no-pad-bottom {
+  padding-bottom: 0;
+  background: #f7f7f7;
 }
 
 /* ----------------------------------------------------------------- Override contact form styling */

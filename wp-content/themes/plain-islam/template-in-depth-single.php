@@ -4,7 +4,7 @@
 		<h1>Gender equality</h1>
 	</div>
 
-	<main role="main">
+	<main role="main" class="m-top">
 		<!-- section -->
 		<section>
 			
