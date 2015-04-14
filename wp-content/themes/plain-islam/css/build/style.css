@@ -662,14 +662,19 @@ section#hero-slider {
 }
 section#hero-slider ul li {
   width: 100%;
-  height: 450px;
   position: relative;
 }
 section#hero-slider ul li .text-slider {
   width: 40%;
+  position: absolute;
   float: left;
 }
 section#hero-slider ul li .text-slider blockquote {
+  line-height: 40px;
+  font-size: 40px;
+  padding-top: 35%;
+}
+section#hero-slider ul li .text-slider blockquote p {
   line-height: 40px;
   font-size: 40px;
 }

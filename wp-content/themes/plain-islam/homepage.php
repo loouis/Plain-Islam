@@ -4,62 +4,31 @@
 		
 		<section id="hero-slider" class="top-section">
 			<ul class="bx-slider">
+
+			<?php $slider = new WP_Query( array(
+           			'post_type' => 'hero-slider', 'posts_per_page' => -1,  'order' => 'ASC')); ?>
+
+           			<?php while ($slider->have_posts() ) : $slider->the_post(); ?>
 				<li>
 					<div class="wrapper">
+
 						<div class="text-slider">
-							<blockquote>"None of you truly believes until he loves for his brother what he loves for himself"</blockquote>
+							<blockquote><?php the_content();?></blockquote>
 							<cite>
 								<span class="quotes-icon">
 									
 								</span>
-								<p>Prophet Muhammad</p>
+								<p><?php the_field('quote_name');?></p>
 							</cite>
 						</div><!-- /text-slider -->
 
-						<div class="slider-image">
-							
-						</div>
+						<?php the_post_thumbnail('hero-slider'); ?>
 					</div>
 				</li>
-				<li>
-					<div class="wrapper">
-						<div class="text-slider">
-							<blockquote>"None of you truly believes until he loves for his brother what he loves for himself"</blockquote>
-								<cite>
-									<span class="quotes-icon">
-										
-									</span>
-									<p>Prophet Muhammad</p>
-								</cite>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="wrapper">
-						<div class="text-slider">
-							<blockquote>"None of you truly believes until he loves for his brother what he loves for himself"</blockquote>
-								<cite>
-									<span class="quotes-icon">
-										
-									</span>
-									<p>Prophet Muhammad</p>
-								</cite>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="wrapper">
-						<div class="text-slider">
-							<blockquote>"None of you truly believes until he loves for his brother what he loves for himself"</blockquote>
-								<cite>
-									<span class="quotes-icon">
-										
-									</span>
-									<p>Prophet Muhammad</p>
-								</cite>
-						</div>
-					</div>
-				</li>
+
+				<?php endwhile; ?>
+
+				<?php wp_reset_query();?>
 			</ul>
 	
 		</section>
