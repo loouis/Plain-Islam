@@ -75,7 +75,7 @@
 
 				<ul>
 
-				<?php while ($bitesize->have_posts() ) : $bitesize->the_post(); ?>
+					<?php while ($bitesize->have_posts() ) : $bitesize->the_post(); ?>
 
 					<li>
 						<a href="<?php the_permalink(); ?>">
@@ -84,9 +84,8 @@
 						</a>
 					</li>
 
-				<?php endwhile; ?>
-
-
+					<?php endwhile; ?>
+					<?php wp_reset_query();?>
 					
 				</ul>
 
@@ -114,32 +113,24 @@
 			<span class="underline"></span>
 			<p>Topics written by experts in their field</p>
 
+			<?php $indepth = new WP_Query( array(
+           		'post_type' => 'in-depth', 'posts_per_page' => -1,  'order' => 'ASC')); ?>
+
 			<ul>
-				<a href="">
+
+           		<?php while ($indepth->have_posts() ) : $indepth->the_post(); ?>
+
+           		<?php query_posts("showposts=5"); // show one latest post only ?>
+
+				<a href="<?php the_permalink(); ?>">
 					<li>
-						<h4>Gender equality</h4>
-						<p>The issue of women's rights in Islam is a key arena of the debate…</p>
+						<h4><?php the_title();?></h4>
+						<p><?php echo substr(get_the_excerpt(), 0,100); ?>…</p>
 					</li>
 				</a>
 
-				<a href="">
-					<li>
-						<h4>Law and morality</h4>
-						<p>The law plays a central role in Islam and yet, the law is also the least…</p>
-					</li>
-				</a>
-				<a href="">
-					<li>
-						<h4>Islam and science</h4>
-						<p>Science and Islam are intimately linked. Islam not only places a high premium on science but positively…</p>
-					</li>
-				</a>
-				<a href="">
-					<li>
-						<h4>Islam and the West in a post Sept. 11 world</h4>
-						<p>The law plays a central role in Islam and yet, the law is also the least…</p>
-					</li>
-				</a>
+				<?php endwhile;?>
+
 			</ul>
 
 			<p>
