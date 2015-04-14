@@ -71,7 +71,7 @@
 				<p>This website aims to provide information on Islam and Muslims to non-specialist audiences in a way that is clear, simple and accessible. Begin here by clicking on any topic.</p>				
 				
 				<?php $bitesize = new WP_Query( array(
-           			'post_type' => 'bite-size', 'posts_per_page' => -1)); ?>
+           			'post_type' => 'bite-size', 'posts_per_page' => -1,  'order' => 'ASC')); ?>
 
 				<ul>
 
