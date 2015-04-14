@@ -25,7 +25,6 @@ jQuery(document).ready(function($){
 	});
 
 	//Open lightbox
-
 	$('#contact-button').click(function(){
 		$('body').addClass("no-scroll");
 		$('.contact-lightbox').fadeIn();
@@ -52,6 +51,11 @@ jQuery(document).ready(function($){
 
 	$(window).resize(function(){
 		centerLightbox();
+	});
+
+	//Scroll top
+	$('.scroll-to-top').click(function(){
+		$('body,html').animate({ scrollTop: 0 }, 'slow', 'swing');
 	});
 
 	
