@@ -10,10 +10,10 @@
 			
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<div class="wrapper wrapper--small">
+			<div class="wrapper wrapper--small wow fadeInDown">
 				<h1><?php the_title();?></h1>
-				<span class="underline"></span>
-				<div class="text-container">
+				<span class="underline wow fadeInDown"></span>
+				<div class="text-container wow fadeInDown">
 					<?php the_content(); ?>	
 				</div>
 

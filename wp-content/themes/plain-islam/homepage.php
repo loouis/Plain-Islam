@@ -2,7 +2,7 @@
 
 	<main role="main">
 		
-		<section id="hero-slider" class="top-section">
+		<section id="hero-slider" class="top-section wow fadeIn" >
 			<ul class="bx-slider">
 
 			<?php $slider = new WP_Query( array(
@@ -12,7 +12,7 @@
 				<li>
 					<div class="wrapper">
 
-						<div class="text-slider">
+						<div class="text-slider wow fadeInDown">
 
 							<blockquote><?php the_content();?></blockquote>
 
@@ -36,10 +36,10 @@
 
 		<section id="bite-size">
 			<div class="wrapper">
-				<h1>Bite-size</h1>
-				<span class="underline"></span>
+				<h1 class="wow fadeInDown">Bite-size</h1>
+				<span class="underline wow fadeInDown"></span>
 
-				<p>This website aims to provide information on Islam and Muslims to non-specialist audiences in a way that is clear, simple and accessible. Begin here by clicking on any topic.</p>				
+				<p class="wow fadeInDown">This website aims to provide information on Islam and Muslims to non-specialist audiences in a way that is clear, simple and accessible. Begin here by clicking on any topic.</p>				
 				
 				<?php $bitesize = new WP_Query( array(
            			'post_type' => 'bite-size', 'posts_per_page' => -1,  'order' => 'ASC')); ?>
@@ -48,7 +48,7 @@
 
 					<?php while ($bitesize->have_posts() ) : $bitesize->the_post(); ?>
 
-					<li>
+					<li class="wow fadeInDown">
 						<a href="<?php the_permalink(); ?>">
 							 <?php the_post_thumbnail(); // Fullsize image for the single post ?>
 							<div class="bite-size__title"><?php the_title();?></div>
@@ -68,7 +68,7 @@
 
 		</section><!-- //bite-size -->
 
-		<section id="home-video-intro">
+		<section id="home-video-intro" class="wow fadeInDown">
 			<div class="wrapper">
 				<a href="#" id="homepage-video-button">
 					<div class="play-button">
@@ -81,7 +81,7 @@
 
 
 		<span class="anchor" id="in-depth"></span>
-		<section id="in-depth">
+		<section id="in-depth" class="wow fadeInDown">
 			<h3>Need a little more depth?</h2>
 			<span class="underline"></span>
 
@@ -97,7 +97,7 @@
            		<?php query_posts("showposts=5"); // show one latest post only ?>
 
 				<a href="<?php the_permalink(); ?>">
-					<li>
+					<li class="wow fadeInDown">
 						<h4><?php the_title();?></h4>
 						<p class="in-depth--excerpt"><?php echo substr(get_the_excerpt(), 0,100); ?>…</p>
 

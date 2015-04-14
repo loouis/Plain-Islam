@@ -8,10 +8,10 @@
 		<!-- section -->
 		<section>
 
-			<div class="wrapper wrapper--small">
+			<div class="wrapper wrapper--small wow fadeInDown">
 
 				<h1><?php the_title();?></h1>
-				<span class="underline"></span>
+				<span class="underline wow fadeInDown"></span>
 
 				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -33,8 +33,8 @@
 				<?php while ($glossary->have_posts() ) : $glossary->the_post(); ?>
 
 					<div class="glossary-container">
-						<h3><?php the_title();?></h3>
-						<div class="indent"><?php the_content();?></div>
+						<h3 class="wow fadeInDown"><?php the_title();?></h3>
+						<div class="indent wow fadeInDown"><?php the_content();?></div>
 					</div>
 
 				<?php endwhile;?>

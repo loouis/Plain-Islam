@@ -3,7 +3,7 @@
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 
-	<div class="header-hero-image top-section" >
+	<div class="header-hero-image top-section wow fadeInDown" >
 		<h1><?php the_title(); ?></h1>
 	</div>
 
@@ -12,7 +12,7 @@
 		<section>
 			
 
-			<div class="wrapper wrapper--small">
+			<div class="wrapper wrapper--small wow fadeInDown">
 
 				<?php the_content(); ?>
 

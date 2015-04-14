@@ -2,6 +2,7 @@
 jQuery(document).ready(function($){
 	
 	// 'use strict';
+
 	
 	//View more bite-size on the homepage
 	$('.bite-size__view-more-button').click(function(e){
@@ -59,7 +60,19 @@ jQuery(document).ready(function($){
 		$('body,html').animate({ scrollTop: 0 }, 'slow', 'swing');
 	});
 
+
+	//init
+	wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
 	
 	
-})(jQuery);
+});
 

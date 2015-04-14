@@ -10,21 +10,21 @@
 		<!-- section -->
 		<section class="no-pad-bottom">
 
-			<div class="wrapper wrapper--small">
+			<div class="wrapper wrapper--small wow fadeInDown">
 
 				<div class="author-details">
 
-					<div class="person_image">
+					<div class="person_image wow fadeInDown">
 						<?php the_post_thumbnail('headshot');?>
 					</div>
 
-					<div class="person-name-title">
+					<div class="person-name-title wow fadeInDown">
 
-						<div class="person_name">
+						<div class="person_name wow fadeInDown">
 							<?php the_field('person_name');?>
 						</div>
 
-						<div class="person_title">
+						<div class="person_title wow fadeInDown">
 							<?php the_field('person_title');?>
 						</div>
 					</div>
@@ -33,9 +33,9 @@
 
 				<h1><?php the_title();?></h1>
 
-				<span class="underline"></span>
+				<span class="underline wow fadeInDown"></span>
 				
-				<div class="text-container">
+				<div class="text-container wow fadeInDown">
 					<?php the_content(); ?>
 				</div>
 			</div>
