@@ -29,7 +29,6 @@
 				<a href="<?php echo get_permalink(get_adjacent_post()); ?>" class="previous-post"><li>Previous</li></a>
 				<li><a href="<?php bloginfo(url);?>/bite-size" class="see-all-blog-posts">View all</a></li>
 				<a href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>" class="next-post"><li class="next-post">Next</li></a>
-				
 			</ul>
 		</div>
 
