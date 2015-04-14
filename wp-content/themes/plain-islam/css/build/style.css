@@ -1046,20 +1046,32 @@ section#lightbox h1 {
 section#lightbox p {
   padding-bottom: 0;
 }
-section#lightbox .wrapper--small {
+section#lightbox .opening-hours {
+  margin-top: 20px;
+}
+section#lightbox button.close {
+  position: absolute;
+  top: 0px;
+  right: -45px;
+}
+section#lightbox .wrapper {
   position: relative;
+  max-width: 900px;
   margin: 0 auto;
   padding: 30px 40px;
   background: white;
 }
-section#lightbox .wrapper--small .left-column {
+section#lightbox .wrapper span.underline {
+  float: left !important;
+}
+section#lightbox .wrapper .left-column {
   float: left;
   width: 55%;
 }
-section#lightbox .wrapper--small .left-column .address {
+section#lightbox .wrapper .left-column .address {
   padding-bottom: 20px;
 }
-section#lightbox .wrapper--small .right-column {
+section#lightbox .wrapper .right-column {
   float: right;
   width: 40%;
   padding-top: 70px;
@@ -1125,7 +1137,7 @@ input, textarea, .wpcf7-submit {
   border: 0;
   font-size: 14px;
   background: none;
-  color: white;
+  color: #565656;
   border: 1px solid #aeaeae;
   resize: vertical;
   box-shadow: none !important;
@@ -1140,24 +1152,24 @@ input, textarea, .wpcf7-submit {
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: black !important;
+  color: #565656 !important;
 }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: black !important;
+  color: #565656 !important;
   opacity: 1;
 }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: black !important;
+  color: #565656 !important;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: black !important;
+  color: #565656 !important;
 }
 
 .wpcf7-submit:hover {

@@ -597,12 +597,25 @@ section#lightbox{
 	p{
 		padding-bottom:0;
 	}
+	.opening-hours{
+		margin-top:20px;
+	}
+	button.close{
+		position:absolute;
+		top:0px;
+		right:-45px;
+	}
 
-	.wrapper--small{
+	.wrapper{
 		position:relative;
+		max-width:900px;
 		margin: 0 auto;
 		padding:30px 40px;
 		background:white;
+
+		span.underline{
+			float:left !important;
+		}
 
 		.address{
 
@@ -695,7 +708,7 @@ input, textarea, .wpcf7-submit{
     border: 0;
     font-size:14px;
     background:none;
-    color:white;
+    color:#565656;
     border: 1px solid #aeaeae;
     resize: vertical;
     box-shadow: none !important;
@@ -709,18 +722,18 @@ input, textarea, .wpcf7-submit{
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-      color:    black !important;
+      color:    #565656 !important;
   }
   :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-     color:    black !important;
+     color:    #565656 !important;
      opacity:  1;
   }
   ::-moz-placeholder { /* Mozilla Firefox 19+ */
-     color:    black !important;
+     color:    #565656 !important;
      opacity:  1;
   }
   :-ms-input-placeholder { /* Internet Explorer 10+ */
-     color:    black !important;
+     color:    #565656 !important;
   }
 
 .wpcf7-submit:hover{
