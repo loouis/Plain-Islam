@@ -21,20 +21,20 @@ jQuery(document).ready(function($){
 	$('#homepage-video-button').click(function(e){
 		e.preventDefault();
 		$('body').addClass("no-scroll");
-		$('#video-lightbox').fadeIn();
+		$('#video-lightbox').fadeIn(1100);
 	});
 
 	//Open lightbox
 	$('#contact-button').click(function(){
 		$('body').addClass("no-scroll");
-		$('.contact-lightbox').fadeIn();
+		$('.contact-lightbox').fadeIn(1100);
 	});
 
 
 	//close contact lightbox
 	$('button.close').click(function(){
 		$('body').removeClass("no-scroll");
-		$('section#lightbox, section#video-lightbox').fadeOut();
+		$('section#lightbox, section#video-lightbox').fadeOut(1100);
 	});
 
 	 //center video in lightbox maths and style

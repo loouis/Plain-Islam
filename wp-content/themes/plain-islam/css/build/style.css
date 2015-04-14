@@ -489,7 +489,6 @@ h1, h2, h3, h4, h5, p, a {
 h1 {
   font-size: 2.625em;
   font-weight: 100;
-  text-shadow: 1px 1px 1px black;
 }
 
 h2 {
@@ -862,22 +861,41 @@ section#in-depth h4 {
 section#in-depth p {
   text-align: center;
 }
+section#in-depth .in-depth--excerpt {
+  opacity: 0;
+  transform: translate(0px, -10px);
+  transition: opacity .6s ease-in-out;
+}
 section#in-depth ul {
   margin-top: 40px;
 }
 section#in-depth ul li {
   border-bottom: 1px solid #EFEFEF;
-  padding: 30px 0 38px 0;
+  padding: 60px 0 68px 0;
   opacity: 0.8;
+  text-align: center;
   transition: background-color .3s ease-in-out;
 }
 section#in-depth ul li:hover {
   background: #d4efe4;
   opacity: 1;
 }
+section#in-depth ul li:hover h4 {
+  transform: translate(0px, -15px);
+}
+section#in-depth ul li:hover .in-depth--excerpt {
+  opacity: 1;
+}
+section#in-depth ul li:hover span.read-more {
+  transform: translate(0px, 5px) !important;
+  color: #565656;
+  opacity: 0.3;
+}
 section#in-depth ul li h4 {
   text-align: center;
   padding-bottom: 10px;
+  transform: translate(0px, 0px);
+  transition: transform .4s ease-in-out;
 }
 section#in-depth ul li p {
   text-align: center;
@@ -885,6 +903,19 @@ section#in-depth ul li p {
 section#in-depth p.small-text {
   max-width: 40%;
   margin: 30px auto 0 auto;
+}
+section#in-depth span.read-more {
+  text-align: center;
+  left: 50%;
+  right: 50%;
+  width: 120px;
+  font-style: italic;
+  margin-left: -60px;
+  display: block;
+  position: absolute;
+  transform: translate(0px, -10px);
+  color: #92c7b1;
+  transition: transform .4s ease-in-out;
 }
 
 /* ----------------------------------------------------------------- Single page template */

@@ -373,13 +373,20 @@ section#in-depth{
 		text-align: center;
 	}
 
+	.in-depth--excerpt{
+		opacity:0;
+		transform: translate(0px, -10px);
+		transition: opacity .6s ease-in-out;
+	}
+
 	ul{
 		margin-top:40px;
 
 		li{
 			border-bottom:1px solid #EFEFEF;
-			padding:30px 0 38px 0;
+			padding:60px 0 68px 0;
 			opacity:0.8;
+			text-align:center;
 
 			transition: background-color .3s ease-in-out;
 			// transition: opacity .3s ease-in-out;
@@ -387,11 +394,32 @@ section#in-depth{
 			&:hover{
 				background:$swans-down;
 				opacity:1;
+
+				h4{
+					transform: translate(0px, -15px);
+				}
+
+				.in-depth--excerpt{
+					opacity: 1;
+					// transform: translate(0px, -10px);
+
+				}
+
+				span.read-more{
+					transform: translate(0px, 5px) !important;
+					color:#565656;
+					opacity:0.3;
+				}
 			}
+
 
 			h4{
 				text-align: center;
 				padding-bottom:10px;
+
+				transform: translate(0px, 0px);
+
+				transition: transform .4s ease-in-out;
 			}
 			p{
 				text-align: center;
@@ -402,7 +430,23 @@ section#in-depth{
 		max-width:40%;
 		margin: 30px auto 0 auto;
 	}
+
+	span.read-more{
+		text-align: center;
+		left:50%;
+		right:50%;
+		width:120px;
+		font-style:italic;
+		margin-left:-60px;
+		display: block;
+		position:absolute;
+		transform: translate(0px, -10px);
+		color:$shadow-green;
+
+		transition: transform .4s ease-in-out;
+	}
 }
+
 
 
 /* ----------------------------------------------------------------- Single page template */

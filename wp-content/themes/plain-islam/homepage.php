@@ -68,6 +68,7 @@
 			<div class="wrapper">
 				<h2>Bite-size</h2>
 				<span class="underline"></span>
+
 				<p>This website aims to provide information on Islam and Muslims to non-specialist audiences in a way that is clear, simple and accessible. Begin here by clicking on any topic.</p>				
 				
 				<?php $bitesize = new WP_Query( array(
@@ -111,6 +112,7 @@
 		<section id="in-depth">
 			<h3>Need a little more depth?</h2>
 			<span class="underline"></span>
+
 			<p>Topics written by experts in their field</p>
 
 			<?php $indepth = new WP_Query( array(
@@ -125,7 +127,12 @@
 				<a href="<?php the_permalink(); ?>">
 					<li>
 						<h4><?php the_title();?></h4>
-						<p><?php echo substr(get_the_excerpt(), 0,100); ?>…</p>
+						<p class="in-depth--excerpt"><?php echo substr(get_the_excerpt(), 0,100); ?>…</p>
+
+						<span class="read-more">
+							Read more <i style="line-height:20px; position:relative; top:1px; font-style:normal;">→</i>
+
+						</span>
 					</li>
 				</a>
 
