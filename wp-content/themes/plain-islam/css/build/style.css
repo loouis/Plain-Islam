@@ -967,11 +967,14 @@ body.page-template-template-in-depth-single section {
   float: left;
 }
 .author-details .person-name-title {
-  padding-top: 10px;
+  padding-top: 13px;
 }
 .author-details .person-name-title .person_name {
   font-size: 20px;
   font-weight: 300;
+}
+.author-details .person-name-title .person_title {
+  margin-top: 10px;
 }
 
 footer {
