@@ -178,6 +178,10 @@ section#bite-size{
 	overflow:hidden;
 
 	transition: all 3s ease-in-out;
+
+	h1{
+		text-align:center;
+	}
 	
 	p{
 		max-width:90%;
@@ -492,7 +496,7 @@ body.page-template-template_single, body.page-template-Bite-size-preview, body.p
 body.page-template-Bite-size-preview{
 
 	section#bite-size{
-		margin-top:90px;
+		// margin-top:90px;
 		height:auto;
 	}
 
@@ -573,12 +577,14 @@ footer{
 		opacity:0.2;
 		padding:6px 5px;
 		height:40px;
-		background:rgba(0,0,0,0.23);
+		background:rgba(0,0,0,0.3);
 		border-radius:50%;
 		position:absolute;
 		right:50px;
 		top:30px;
 		cursor:pointer;
+
+		transition: background .5s ease-in-out;
 
 		&:hover{
 			background:$swans-down;

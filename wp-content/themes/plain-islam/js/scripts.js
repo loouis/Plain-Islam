@@ -28,6 +28,7 @@ jQuery(document).ready(function($){
 	$('#contact-button').click(function(){
 		$('body').addClass("no-scroll");
 		$('.contact-lightbox').fadeIn(1100);
+		centerLightbox();
 	});
 
 

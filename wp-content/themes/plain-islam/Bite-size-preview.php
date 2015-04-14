@@ -4,12 +4,12 @@
 		<h1><?php the_title(); ?></h1>
 	</div> -->
 
-	<main role="main">
+	<main role="main" class="m-top">
 	
 			
 		<section id="bite-size">
 			<div class="wrapper">
-				<h2>Bite-size</h2>
+				<h1>Bite-size</h1>
 				<span class="underline"></span>
 				<p>This website aims to provide information on Islam and Muslims to non-specialist audiences in a way that is clear, simple and accessible. Begin here by clicking on any topic.</p>				
 				
