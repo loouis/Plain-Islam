@@ -1,11 +1,14 @@
 
 
+/* ----------------------------------------------------------------- single globals */
+
 .wrapper{
 	max-width:1280px;
 	padding:0 20px;
 	margin: 0 auto;
 	position:relative;
 }
+
 .wrapper--small{
 	max-width:800px;
 
@@ -21,12 +24,35 @@
 	}
 }
 
+.no-pad-bottom{
+	padding-bottom:0;
+	background:#f7f7f7;
+}
+
+.text-container{
+	clear:both;
+	margin-top:20px;
+}
+
+.m-top{
+	margin-top:60px;
+}
+
+// add header spacing for anchor scrolling
+.anchor{
+  display: block;
+  height: 90px; /*same height as header*/
+  margin-top: -90px; /*same height as header*/
+  visibility: hidden;
+}
+
 section{
 	width:100%;
 	position:relative;
 	padding:80px 0 100px 0;
 	@include clearfix;
 }
+
 .top-section{
 	margin-top:90px;
 }
@@ -58,6 +84,10 @@ span.underline{
 	margin: 0 auto;
 	margin-bottom:18px;
 }
+
+
+
+/* ----------------------------------------------------------------- Header */
 
 header{
 	width:100%;
@@ -112,6 +142,7 @@ header{
 	}
 }
 
+/* ----------------------------------------------------------------- Hero slider */
 
 section#hero-slider{
 	width:100%;
@@ -177,6 +208,7 @@ section#hero-slider{
 
 }
 
+/* ----------------------------------------------------------------- Bite-size section */
 
 section#bite-size{
 	background:lighten($swans-down,5%);
@@ -366,12 +398,14 @@ section#home-video-intro{
 	}
 }
 
-
+/* ----------------------------------------------------------------- In depth section */
 section#in-depth{
 	width:100%;
+
 	h3{
 		text-align: center;
 	}
+
 	h4{
 		font-size: 26px;
 
@@ -700,14 +734,7 @@ section#lightbox{
 
 
 
-.text-container{
-	clear:both;
-	margin-top:20px;
-}
-
-.m-top{
-	margin-top:60px;
-}
+/* ----------------------------------------------------------------- Next and previous arrows */
 
 .nex-prev-posts{
 	margin-top:60px;
@@ -744,10 +771,6 @@ section#lightbox{
 	}
 }
 
-.no-pad-bottom{
-	padding-bottom:0;
-	background:#f7f7f7;
-}
 
 
 

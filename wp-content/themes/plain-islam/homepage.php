@@ -78,6 +78,8 @@
 			</div>
 		</section><!-- //home-video-intro -->
 
+
+		<span class="anchor" id="in-depth"></span>
 		<section id="in-depth">
 			<h3>Need a little more depth?</h2>
 			<span class="underline"></span>

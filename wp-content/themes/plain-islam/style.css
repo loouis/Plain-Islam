@@ -553,6 +553,7 @@ cite {
   color: #484354;
 }
 
+/* ----------------------------------------------------------------- single globals */
 .wrapper {
   max-width: 1280px;
   padding: 0 20px;
@@ -571,6 +572,29 @@ cite {
   margin: auto;
   float: left !important;
   clear: both;
+}
+
+.no-pad-bottom {
+  padding-bottom: 0;
+  background: #f7f7f7;
+}
+
+.text-container {
+  clear: both;
+  margin-top: 20px;
+}
+
+.m-top {
+  margin-top: 60px;
+}
+
+.anchor {
+  display: block;
+  height: 90px;
+  /*same height as header*/
+  margin-top: -90px;
+  /*same height as header*/
+  visibility: hidden;
 }
 
 section {
@@ -615,6 +639,7 @@ span.underline {
   margin-bottom: 18px;
 }
 
+/* ----------------------------------------------------------------- Header */
 header {
   width: 100%;
   position: fixed;
@@ -654,6 +679,7 @@ header nav ul li:nth-child(5) {
   padding-right: 0;
 }
 
+/* ----------------------------------------------------------------- Hero slider */
 section#hero-slider {
   width: 100%;
   padding: 0;
@@ -704,6 +730,7 @@ section#hero-slider ul li .slider-image {
   width: 300px;
 }
 
+/* ----------------------------------------------------------------- Bite-size section */
 section#bite-size {
   background: #e7f6f0;
   height: 1130px;
@@ -865,6 +892,7 @@ section#home-video-intro p {
   text-shadow: 1px 1px 1px black;
 }
 
+/* ----------------------------------------------------------------- In depth section */
 section#in-depth {
   width: 100%;
 }
@@ -1140,15 +1168,7 @@ section#lightbox a {
   text-decoration: underline;
 }
 
-.text-container {
-  clear: both;
-  margin-top: 20px;
-}
-
-.m-top {
-  margin-top: 60px;
-}
-
+/* ----------------------------------------------------------------- Next and previous arrows */
 .nex-prev-posts {
   margin-top: 60px;
   background: white;
@@ -1180,11 +1200,6 @@ section#lightbox a {
 }
 .nex-prev-posts ul.single-article-next-prev-nav li.next-post {
   text-align: right !important;
-}
-
-.no-pad-bottom {
-  padding-bottom: 0;
-  background: #f7f7f7;
 }
 
 /* ----------------------------------------------------------------- Override contact form styling */
