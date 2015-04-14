@@ -47,12 +47,34 @@
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 57.4 58.6" enable-background="new 0 0 57.4 58.6" xml:space="preserve"><g><path fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" d="M46.4,24c0,12.4-10.1,22.5-22.5,22.5C11.6,46.4,1.5,36.4,1.5,24C1.5,11.6,11.6,1.5,24,1.5C36.4,1.5,46.4,11.6,46.4,24z"/><line fill="none" stroke="#231F20" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="39.7" y1="40" x2="55.9" y2="57.1"/></g></svg>
 					</div>
 				</a>
-
+				
+				<?php if(is_front_page() ) { ?>
 				<!-- nav -->
 				<nav class="nav" role="navigation">
-					<?php html5blank_nav(); ?>
+					<ul>
+						<li><a href="<?php bloginfo(url);?>/about-us">About us</a></li>
+						<li><a href="<?php bloginfo(url);?>/bite-size">Bite-size</a></li>
+						<li><a href="#in-depth">In-depth</a></li>
+						<li><a href="<?php bloginfo(url);?>/glossary">Glossary</a></li>
+						<li><a href="#" id="contact-button">Contact</a></li>
+					</ul>
+
+				</nav><?php
+
+				}else{ ?>
+					<nav class="nav" role="navigation">
+					<ul>
+						<li><a href="<?php bloginfo(url);?>/about-us">About us</a></li>
+						<li><a href="<?php bloginfo(url);?>/bite-size">Bite-size</a></li>
+						<li><a href="<?php bloginfo(url);?>/#in-depth">In-depth</a></li>
+						<li><a href="<?php bloginfo(url);?>/glossary">Glossary</a></li>
+						<li><a href="#" id="contact-button">Contact</a></li>
+					</ul>
 
 				</nav>
+
+
+				<?php } ?>	
 
 
 				<!-- /nav -->

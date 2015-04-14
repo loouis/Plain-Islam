@@ -26,6 +26,11 @@ jQuery(document).ready(function($){
 
 	//Open lightbox
 
+	$('#contact-button').click(function(){
+		$('body').addClass("no-scroll");
+		$('.contact-lightbox').fadeIn();
+	});
+
 
 	//close contact lightbox
 	$('button.close').click(function(){
