@@ -39,6 +39,15 @@ button{
 	border: none;
 }
 
+span.underline{
+	width:40px;
+	height:1px;
+	background:$shadow-green;
+	display:block;
+	margin: 0 auto;
+	margin-bottom:18px;
+}
+
 header{
 	width:100%;
 	position:fixed;
