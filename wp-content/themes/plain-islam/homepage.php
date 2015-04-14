@@ -13,7 +13,9 @@
 					<div class="wrapper">
 
 						<div class="text-slider">
+
 							<blockquote><?php the_content();?></blockquote>
+
 							<cite>
 								<span class="quotes-icon">
 									
@@ -21,9 +23,8 @@
 								<p><?php the_field('quote_name');?></p>
 							</cite>
 						</div><!-- /text-slider -->
-
-						<?php the_post_thumbnail('hero-slider'); ?>
 					</div>
+					<?php the_post_thumbnail('hero-slider'); ?>
 				</li>
 
 				<?php endwhile; ?>

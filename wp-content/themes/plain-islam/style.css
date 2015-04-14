@@ -305,7 +305,7 @@ a {
 ===================================*/
 .bx-wrapper {
   position: relative;
-  margin: 0 auto 60px;
+  margin: 0 auto 0px;
   padding: 0;
   *zoom: 1;
 }
@@ -326,8 +326,9 @@ a {
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: -30px;
+  bottom: 25px;
   width: 100%;
+  z-index: 999;
 }
 
 /* LOADER */
@@ -687,7 +688,11 @@ section#hero-slider {
 }
 section#hero-slider ul li {
   width: 100%;
+  max-height: 600px;
   position: relative;
+}
+section#hero-slider ul li img {
+  width: 100%;
 }
 section#hero-slider ul li .text-slider {
   width: 40%;
