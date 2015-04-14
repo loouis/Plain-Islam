@@ -884,7 +884,7 @@ section#in-depth ul li p {
 }
 section#in-depth p.small-text {
   max-width: 40%;
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
 }
 
 /* ----------------------------------------------------------------- Single page template */

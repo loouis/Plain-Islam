@@ -133,10 +133,6 @@
 
 			</ul>
 
-			<p>
-				<a href="#" class="in-depth__view-more-button button">view more</a>
-			</p>
-
 			<p class="small-text">The views expressed within these articles belong to the respective expert authors, they do not necessarily represent the views of the Islamic Society of Britain</p>
 
 		</section><!-- //in-depth -->
