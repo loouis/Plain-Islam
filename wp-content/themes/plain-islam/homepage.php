@@ -18,7 +18,7 @@
 
 							<cite>
 								<span class="quotes-icon">
-									
+									<img src="<?php bloginfo(template_url);?>/img/quote-mark.png" alt="">
 								</span>
 								<p><?php the_field('quote_name');?></p>
 							</cite>

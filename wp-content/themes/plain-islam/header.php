@@ -52,10 +52,10 @@
 				<!-- nav -->
 				<nav class="nav" role="navigation">
 					<ul>
-						<li><a href="<?php bloginfo(url);?>/about-us">About us</a></li>
-						<li><a href="<?php bloginfo(url);?>/bite-size">Bite-size</a></li>
+						<li><a href="<?php bloginfo(url);?>/about-us" class="nav-about-us">About us</a></li>
+						<li><a href="<?php bloginfo(url);?>/bite-size" class="nav-bite-size">Bite-size</a></li>
 						<li><a href="#in-depth" id="in-depth-nav">In-depth</a></li>
-						<li><a href="<?php bloginfo(url);?>/glossary">Glossary</a></li>
+						<li><a href="<?php bloginfo(url);?>/glossary" class="nav-glossary">Glossary</a></li>
 						<li><a href="#" id="contact-button">Contact</a></li>
 					</ul>
 
@@ -64,10 +64,10 @@
 				}else{ ?>
 					<nav class="nav" role="navigation">
 					<ul>
-						<li><a href="<?php bloginfo(url);?>/about-us">About us</a></li>
-						<li><a href="<?php bloginfo(url);?>/bite-size">Bite-size</a></li>
+						<li><a href="<?php bloginfo(url);?>/about-us" class="nav-about-us">About us</a></li>
+						<li><a href="<?php bloginfo(url);?>/bite-size" class="nav-bite-size">Bite-size</a></li>
 						<li><a href="<?php bloginfo(url);?>/#in-depth">In-depth</a></li>
-						<li><a href="<?php bloginfo(url);?>/glossary">Glossary</a></li>
+						<li><a href="<?php bloginfo(url);?>/glossary" class="nav-glossary">Glossary</a></li>
 						<li><a href="#" id="contact-button">Contact</a></li>
 					</ul>
 
