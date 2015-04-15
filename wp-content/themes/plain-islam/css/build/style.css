@@ -610,12 +610,17 @@ body, html {
 section {
   width: 100%;
   position: relative;
-  padding: 80px 0 100px 0;
+  padding: 40px 0 50px 0;
 }
 section:after {
   content: "";
   display: table;
   clear: both;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 80px 0 100px 0;
+  }
 }
 
 .top-section {
