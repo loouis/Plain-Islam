@@ -1217,7 +1217,13 @@ footer .scroll-to-top {
   right: 50px;
   top: 34px;
   cursor: pointer;
+  display: none;
   transition: background .5s ease-in-out;
+}
+@media (min-width: 500px) {
+  footer .scroll-to-top {
+    display: block;
+  }
 }
 footer .scroll-to-top:hover {
   background: #d4efe4;
