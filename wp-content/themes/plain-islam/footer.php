@@ -22,11 +22,11 @@
 
 		<section id="lightbox" class="lightbox contact-lightbox">
 
-			<div class="wrapper">
-
 			<button class="close">
 				<img src="<?php bloginfo(template_url);?>/img/close-button.png" alt="">
 			</button>
+
+			<div class="wrapper">
 
 				<div class="contact-details">
 					 <?php echo do_shortcode('[contact-form-7 id="35" title="Lightbox contact form"]')?>  

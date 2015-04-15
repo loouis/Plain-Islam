@@ -119,10 +119,10 @@
 	</main>
 
 	<section id="video-lightbox" class="homepage-video-lightbox lightbox">
+		<button class="close">
+			<img src="<?php bloginfo(template_url);?>/img/close-button.png" alt="">
+		</button>
 		<div class="wrapper">
-			<button class="close">
-				<img src="<?php bloginfo(template_url);?>/img/close-button.png" alt="">
-			</button>
 		</div>
 	</section>
 

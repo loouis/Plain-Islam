@@ -46,7 +46,7 @@ jQuery(document).ready(function($){
 	$('#contact-button').click(function(){
 		$('body').addClass("no-scroll");
 		$('.contact-lightbox').fadeIn(1100);
-		centerLightbox();
+		// centerLightbox();
 	});
 
 
@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
 	function centerLightbox (){
 		//Variables for lightbox
 		var windowHeight = $(window).height();
-		var lightboxWrapper = $('.lightbox .wrapper');
+		var lightboxWrapper = $('.homepage-video-lightbox .wrapper');
 		var lightboxWrapperHeight = lightboxWrapper.height();
 
 		//Margintop: lightbox height - video height / 2

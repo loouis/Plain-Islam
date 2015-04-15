@@ -1317,8 +1317,8 @@ section#video-lightbox .wrapper {
 }
 section#video-lightbox .wrapper button.close {
   position: absolute;
-  top: 0px;
-  right: -50px;
+  top: 20px;
+  right: 0px;
 }
 
 /* ----------------------------------------------------------------- Lightbox */
@@ -1338,8 +1338,8 @@ section#video-lightbox .wrapper button.close {
 }
 .lightbox button.close {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 28px;
+  right: 17px;
 }
 
 section#lightbox h1 {
@@ -1356,8 +1356,8 @@ section#lightbox .opening-hours {
 }
 section#lightbox button.close {
   position: absolute;
-  top: 0px;
-  right: -45px;
+  top: 28px;
+  right: 17px;
 }
 section#lightbox .wrapper {
   position: relative;
@@ -1373,6 +1373,9 @@ section#lightbox .wrapper .left-column {
   width: 100%;
   float: left;
 }
+section#lightbox .wrapper .left-column h1 {
+  padding-bottom: 0;
+}
 @media (min-width: 768px) {
   section#lightbox .wrapper .left-column {
     width: 55%;
@@ -1383,8 +1386,15 @@ section#lightbox .wrapper .left-column .address {
 }
 section#lightbox .wrapper .right-column {
   float: right;
-  width: 40%;
+  width: 100%;
   padding-top: 70px;
+  display: none;
+}
+@media (min-width: 768px) {
+  section#lightbox .wrapper .right-column {
+    width: 40%;
+    display: block;
+  }
 }
 section#lightbox a {
   display: inline-block;
@@ -1392,7 +1402,29 @@ section#lightbox a {
 }
 
 .lightbox {
-  padding: 0 80px 0 40px;
+  padding: 40px;
+}
+@media (min-width: 768px) {
+  .lightbox {
+    padding: 0 40px 0 40px;
+  }
+}
+.lightbox .wrapper {
+  height: 400px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .lightbox .wrapper {
+    height: auto;
+  }
+}
+.lightbox .wrapper button.close {
+  top: 28px;
+  right: 17px;
+}
+
+.contact-lightbox .wrapper {
+  margin-top: 60px !important;
 }
 
 /* ----------------------------------------------------------------- Next and previous arrows */

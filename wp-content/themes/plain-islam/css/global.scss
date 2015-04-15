@@ -879,10 +879,11 @@ section#video-lightbox{
 		height:500px;
 		background:red;
 
+
 		button.close{
 			position:absolute;
-			top:0px;
-			right:-50px;
+			top:20px;
+			right:0px;
 		}
 	}
 
@@ -909,8 +910,8 @@ section#video-lightbox{
 
 	button.close{
 		position:absolute;
-		top:30px;
-		right:30px;
+		top:28px;
+			right:17px;
 	}
 }
 
@@ -931,8 +932,8 @@ section#lightbox{
 	}
 	button.close{
 		position:absolute;
-		top:0px;
-		right:-45px;
+		top:28px;
+			right:17px;
 	}
 
 	.wrapper{
@@ -953,6 +954,10 @@ section#lightbox{
 			width:100%;
 			float:left;
 
+			h1{
+				padding-bottom:0;
+			}
+
 			@include screen (medium){
 				width:55%;	
 			}
@@ -964,8 +969,15 @@ section#lightbox{
 
 		.right-column{
 			float:right;
-			width:40%;
+			width:100%;
 			padding-top:70px;
+			display: none;
+
+
+			@include screen (medium){
+				width:40%;
+				display: block;
+			}
 
 		}	
 	}
@@ -977,9 +989,28 @@ section#lightbox{
 }
 
 .lightbox{
-	padding: 0 80px 0 40px;
+	padding:40px;
 
+	@include screen (medium){
+		padding: 0 40px 0 40px;
+	}
+	.wrapper{
+		height:400px;
+		overflow:scroll;
 
+		@include screen (medium){
+			height:auto;
+		}
+		button.close{
+			top:28px;
+			right:17px;
+		}
+	}
+
+}
+
+.contact-lightbox .wrapper{
+	margin-top:60px !important;
 }
 
 
