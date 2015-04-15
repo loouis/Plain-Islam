@@ -69,6 +69,9 @@ section{
 	display: inline-block;
 	margin: 30px auto;
 	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-o-border-radius:6px;
 	background:$swans-down;
 
 	&:hover{
@@ -380,9 +383,10 @@ section#bite-size{
 			position:relative;
 			width:48.5%;
 			margin:1.6% 3%;
-			background:red;
 			float:left;
 			border-radius:6px;
+			-moz-border-radius:6px;
+			-webkit-border-radius:6px;
 			overflow:hidden;
 
 			.link-arrow{
@@ -722,6 +726,9 @@ body.page-template-template-in-depth-single{
 		width:100px;
 		height:100px;
 		border-radius:50%;
+		-o-border-radius:50%;
+		-webkit-border-radius:50%;
+		-moz-border-radius:50%;
 		overflow:hidden;
 		margin-right:20px;
 		float:left;
@@ -763,6 +770,9 @@ footer{
 		height:40px;
 		background:rgba(255,255,255,0.5);
 		border-radius:50%;
+		-o-border-radius:50%;
+		-webkit-border-radius:50%;
+		-moz-border-radius:50%;
 		position:absolute;
 		right:50px;
 		top:34px;
@@ -944,6 +954,8 @@ input, textarea, .wpcf7-submit{
     box-shadow: none !important;
     //iPhone overrride
     -webkit-border-radius:6px; 
+    border-radius:6px; 
+    -o-border-radius:6px; 
     
     @include screen (medium){
       margin: 10px 0;
