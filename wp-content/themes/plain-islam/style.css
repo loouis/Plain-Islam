@@ -1084,9 +1084,14 @@ section#in-depth ul li p {
   text-align: center;
 }
 section#in-depth p.small-text {
-  max-width: 40%;
+  max-width: 80%;
   margin: 30px auto 0 auto;
   line-height: 18px;
+}
+@media (min-width: 768px) {
+  section#in-depth p.small-text {
+    max-width: 40%;
+  }
 }
 section#in-depth span.read-more {
   text-align: center;

@@ -640,9 +640,13 @@ section#in-depth{
 		}
 	}
 	p.small-text{
-		max-width:40%;
+		max-width:80%;
 		margin: 30px auto 0 auto;
 		line-height: 18px;
+
+		@include screen (medium){
+			max-width:40%;
+		}
 	}
 
 	span.read-more{
