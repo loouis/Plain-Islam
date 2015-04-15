@@ -3,6 +3,15 @@ jQuery(document).ready(function($){
 	
 	// 'use strict';
 
+	//Add class you mobile nav to add close functionality on click
+	$(window).on('resize', function(){
+	if ($(window).width() > 690){
+	    $('nav').removeClass("mobile");
+	  }else{
+	    $('nav').addClass("mobile");
+	  }
+	}).resize();
+
 	
 	//View more bite-size on the homepage
 	$('.bite-size__view-more-button').click(function(e){
@@ -17,6 +26,14 @@ jQuery(document).ready(function($){
 		mode: 'horizontal',
 		pause: 7000,
 	});
+
+	//
+	$('button.burger-menu').click(function(){
+		$('nav.mobile ul').slideToggle();
+		$('#nav-icon3').toggleClass('open');
+	});
+
+
 
 	//homepage video lightbox
 	$('#homepage-video-button').click(function(e){
