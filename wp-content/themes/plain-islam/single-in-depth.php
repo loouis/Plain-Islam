@@ -1,4 +1,4 @@
-<?php /* Template Name: In-depth - single */ get_header(); ?>
+2<?php /* Template Name: In-depth - single */ get_header(); ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -12,26 +12,26 @@
 
 			<div class="wrapper wrapper--small wow fadeInDown">
 
-				<div class="author-details">
+				<div class="author-details wow fadeInDown">
 
-					<div class="person_image wow fadeInDown">
+					<div class="person_image">
 						<?php the_post_thumbnail('headshot');?>
 					</div>
 
-					<div class="person-name-title wow fadeInDown">
+					<div class="person-name-title">
 
-						<div class="person_name wow fadeInDown">
+						<div class="person_name">
 							<?php the_field('person_name');?>
 						</div>
 
-						<div class="person_title wow fadeInDown">
+						<div class="person_title">
 							<?php the_field('person_title');?>
 						</div>
 					</div>
 
 				</div>
 
-				<h1><?php the_title();?></h1>
+				<h1 class="wow fadeInDown"><?php the_title();?></h1>
 
 				<span class="underline wow fadeInDown"></span>
 				

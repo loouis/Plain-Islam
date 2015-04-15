@@ -72,6 +72,12 @@ jQuery(document).ready(function($){
       }
     );
     wow.init();
+
+    //indepth scroll animation on nav
+    $('#in-depth-nav').click(function(e){
+    	e.preventDefault();
+    	$('html,body').animate({scrollTop: $('section#in-depth').offset().top -85 }, "slow");
+    });
 	
 	
 });

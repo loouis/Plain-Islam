@@ -2,17 +2,17 @@
 
 	<main role="main" class="m-top">
 	<!-- section -->
-	<section class="no-pad-bottom">
+	<section class="no-pad-bottom wow fadeInDown">
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<div class="wrapper wrapper--small">
+			<div class="wrapper wrapper--small wow fadeInDown">
 
 				<h1><?php the_title();?></h1>
 
-				<span class="underline"></span>
+				<span class="underline wow fadeInDown"></span>
 
-				<div class="text-container">
+				<div class="text-container wow fadeInDown">
 					<?php the_content(); // Dynamic Content ?>
 				</div>
 

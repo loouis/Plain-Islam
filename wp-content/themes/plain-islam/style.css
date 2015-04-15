@@ -595,9 +595,9 @@ cite {
 
 .anchor {
   display: block;
-  height: 90px;
+  height: 120px;
   /*same height as header*/
-  margin-top: -90px;
+  margin-top: -120px;
   /*same height as header*/
   visibility: hidden;
 }
