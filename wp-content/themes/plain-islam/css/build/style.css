@@ -571,6 +571,15 @@ body, html {
   visibility: hidden;
 }
 
+.bx-has-pager {
+  display: none;
+}
+@media (min-width: 768px) {
+  .bx-has-pager {
+    display: block;
+  }
+}
+
 .wrapper--small {
   max-width: 800px;
 }
@@ -706,7 +715,7 @@ header nav.mobile {
 }
 header nav.mobile ul {
   float: left;
-  width: 112%;
+  width: 120%;
   padding-bottom: 20px;
   background: white;
   display: none;
@@ -827,22 +836,47 @@ section#hero-slider ul li img {
   width: 100%;
 }
 section#hero-slider ul li .text-slider {
-  width: 40%;
+  width: 90%;
   position: absolute;
   float: left;
+}
+@media (min-width: 768px) {
+  section#hero-slider ul li .text-slider {
+    width: 40%;
+  }
 }
 section#hero-slider ul li .text-slider blockquote {
   line-height: 40px;
   font-size: 40px;
-  padding-top: 35%;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  section#hero-slider ul li .text-slider blockquote {
+    padding-top: 25%;
+  }
 }
 section#hero-slider ul li .text-slider blockquote p {
-  line-height: 40px;
-  font-size: 40px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  section#hero-slider ul li .text-slider blockquote p {
+    line-height: 40px;
+    font-size: 40px;
+    text-align: left;
+  }
 }
 section#hero-slider ul li .text-slider cite {
   float: left;
   margin-top: 20px;
+  display: none;
+}
+@media (min-width: 768px) {
+  section#hero-slider ul li .text-slider cite {
+    display: block;
+  }
 }
 section#hero-slider ul li .text-slider cite .quotes-icon {
   float: left;
