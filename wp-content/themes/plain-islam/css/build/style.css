@@ -536,9 +536,14 @@ p.small-text {
 }
 
 blockquote {
-  font-size: 1.875em;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.2em;
+}
+@media (min-width: 768px) {
+  blockquote {
+    font-size: 1.125em;
+  }
 }
 
 em {

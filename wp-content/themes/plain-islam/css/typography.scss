@@ -82,9 +82,13 @@ p.small-text{
 }
 
 blockquote{
-  font-size: em(30px);
+  font-size: em(16px);
   font-weight:300;
   line-height:1.2em;
+
+  @include screen (medium){
+    font-size: em(18px);
+  }
 
 }
 
