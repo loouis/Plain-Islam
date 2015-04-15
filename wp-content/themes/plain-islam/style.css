@@ -1094,10 +1094,16 @@ section#in-depth p {
   text-align: center;
 }
 section#in-depth .in-depth--excerpt {
-  opacity: 0;
-  -webkit-transform: translate(0px, -10px);
-          transform: translate(0px, -10px);
-  transition: opacity .6s ease-in-out;
+  display: none;
+}
+@media (min-width: 768px) {
+  section#in-depth .in-depth--excerpt {
+    display: block;
+    opacity: 0;
+    -webkit-transform: translate(0px, -10px);
+            transform: translate(0px, -10px);
+    transition: opacity .6s ease-in-out;
+  }
 }
 section#in-depth ul {
   margin-top: 40px;
@@ -1374,7 +1380,7 @@ section#lightbox a {
   text-decoration: underline;
 }
 
-.contact-lightbox {
+.lightbox {
   padding: 0 80px 0 40px;
 }
 
