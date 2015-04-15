@@ -1,7 +1,9 @@
 
 
 /* ----------------------------------------------------------------- single globals */
-
+body, html{
+	min-width:320px;
+}
 .wrapper{
 	max-width:1280px;
 	padding:0 20px;
@@ -144,7 +146,136 @@ header{
 		}
 		
 	}
+
+	//Mobile nav styling
+
+	nav.mobile{
+		float:left;
+		width:100%;
+		position:relative;
+		z-index: 100;
+		top:0px;
+		left:-20px;
+
+	
+		ul{
+			@include clearfix;
+			float:left;
+			width:112%;
+			padding-bottom:20px;
+			background:white;
+			display: none;
+
+			li{
+				width:100%;
+				// padding:27px 20px;
+				padding:20px 20px;
+				display: block;
+				clear:both;
+
+
+				a{
+					display:block;
+				}
+				
+			}
+		}
+		
+	}
+
 }
+
+button.burger-menu{
+	width:65px;
+	height:90px;
+	padding: 12px 0 0 10px;
+	float:right;
+	display:block;
+
+	@media (min-width:690px){
+		display: none !important;
+	}
+}
+
+
+//Hamburger menu icon
+
+#nav-icon3 span:nth-child(1) {
+  top: 2px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 12px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 22px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 22px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3{
+  width: 30px;
+  height: 45px;
+  float: right;
+  margin-right: 0px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #315b90;
+  // border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+
 
 /* ----------------------------------------------------------------- Hero slider */
 
@@ -531,15 +662,15 @@ section#in-depth{
 
 body.page-template-template_single, body.page-template-Bite-size-preview, body.page-template-template-in-depth-single{
 
-	ul{
-		margin-left:20px;
-		margin-left:40px;
-		margin-bottom:20px;
+	// ul{
+	// 	margin-left:20px;
+	// 	margin-left:40px;
+	// 	margin-bottom:20px;
 
-		li{
-			list-style-type: disc;
-		}
-	}
+	// 	li{
+	// 		list-style-type: disc;
+	// 	}
+	// }
 
 	h4{
 		margin-top:20px;
@@ -655,9 +786,16 @@ footer{
 section#video-lightbox{
 	
 	.wrapper{
+		max-width:900px;
 		margin: 0 auto;
-		height:600px;
+		height:500px;
 		background:red;
+
+		button.close{
+			position:absolute;
+			top:0px;
+			right:-50px;
+		}
 	}
 
 
@@ -906,6 +1044,19 @@ body.about-us .nav ul li a.nav-about-us, body.bite-size .nav ul li a.nav-bite-si
 	}
 }
 
+
+body.about-us nav.mobile ul li a.nav-about-us, body.bite-size nav.mobile ul li a.nav-bite-size, body.glossary nav.mobile ul li a.nav-glossary{
+
+	&:after{
+		content:"";
+		position:absolute;
+		left:0;
+		top:22px;
+		width:100%;
+		height:2px;
+		background:white !important;
+	}
+}
 
 
 
