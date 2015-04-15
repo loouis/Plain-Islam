@@ -380,14 +380,32 @@ section#bite-size{
 		@include clearfix;
 
 		li{
+			// position:relative;
+			// width:48.5%;
+			// margin:1.6% 3%;
+			// float:left;
+			// border-radius:6px;
+			// -moz-border-radius:6px;
+			// -webkit-border-radius:6px;
+			// overflow:hidden;
+
+
 			position:relative;
-			width:48.5%;
-			margin:1.6% 3%;
+			width:100%;
+			margin-left:auto;
+			margin-right:auto;
 			float:left;
+
+			margin-top:1.6%;
+			margin-bottom:1.6%;
 			border-radius:6px;
 			-moz-border-radius:6px;
 			-webkit-border-radius:6px;
 			overflow:hidden;
+
+			img{
+				width:100%;
+			}
 
 			.link-arrow{
 				width:100px;
@@ -423,7 +441,7 @@ section#bite-size{
 				// transform: padding-top .4s ease-in-out;
 			}
 
-			@media (min-width:500px){
+			@media (min-width:400px){
 				&:nth-child(2n){
 					margin-right:1.5%;
 				}

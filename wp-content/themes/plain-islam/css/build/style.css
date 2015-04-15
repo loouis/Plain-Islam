@@ -888,13 +888,19 @@ section#bite-size ul:after {
 }
 section#bite-size ul li {
   position: relative;
-  width: 48.5%;
-  margin: 1.6% 3%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   float: left;
+  margin-top: 1.6%;
+  margin-bottom: 1.6%;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   overflow: hidden;
+}
+section#bite-size ul li img {
+  width: 100%;
 }
 section#bite-size ul li .link-arrow {
   width: 100px;
@@ -922,7 +928,7 @@ section#bite-size ul li .bite-size__title {
   transform: translate(0px, 150px);
   transition: all .3s ease-in-out;
 }
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   section#bite-size ul li {
     width: 32.33%;
     margin: 0.8% 1.5%;
