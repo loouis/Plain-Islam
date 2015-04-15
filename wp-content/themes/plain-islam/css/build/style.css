@@ -492,6 +492,11 @@ h1 {
   font-weight: 100;
   padding-bottom: 10px;
 }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.25em;
+  }
+}
 
 h2 {
   font-size: 1.75em;
@@ -501,7 +506,7 @@ h2 {
 }
 @media (min-width: 768px) {
   h2 {
-    font-size: 2.375em;
+    font-size: 2.25em;
   }
 }
 
@@ -1382,6 +1387,7 @@ section#lightbox a {
 .nex-prev-posts {
   margin-top: 60px;
   background: white;
+  padding: 0 20px;
   width: 100%;
 }
 .nex-prev-posts:after {

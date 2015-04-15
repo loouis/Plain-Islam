@@ -33,6 +33,10 @@ h1{
   font-weight:100;
   padding-bottom:10px;
 
+  @include screen (medium){
+    font-size: em(36px);
+  }
+
   // text-shadow: 1px 1px 1px black;
   
   // @include screen (medium){
@@ -49,7 +53,7 @@ h2{
   text-align: center;
 
   @include screen (medium){
-    font-size: em(38px);
+    font-size: em(36px);
   }
 }
 
