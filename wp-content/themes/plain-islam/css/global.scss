@@ -39,6 +39,7 @@ body, html{
 }
 
 .no-pad-bottom{
+	padding-top:40px;
 	padding-bottom:0;
 	background:#f7f7f7;
 }
@@ -50,6 +51,10 @@ body, html{
 
 .m-top{
 	margin-top:60px;
+
+	@include screen(medium){
+		margin-top:60px;
+	}
 }
 
 // add header spacing for anchor scrolling
