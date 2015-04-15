@@ -1387,7 +1387,7 @@ section#lightbox .wrapper .left-column .address {
 section#lightbox .wrapper .right-column {
   float: right;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 82px;
   display: none;
 }
 @media (min-width: 768px) {
@@ -1463,6 +1463,10 @@ section#lightbox a {
 }
 
 /* ----------------------------------------------------------------- Override contact form styling */
+.wpcf7-validation-errors {
+  display: none !important;
+}
+
 input, textarea, .wpcf7-submit {
   width: 100%;
   font-family: "proxima-nova", sans-serif;
@@ -1543,7 +1547,7 @@ div.wpcf7 {
 }
 .wpcf7-form .wpcf7-response-output, .sent .wpcf7-response-output {
   position: absolute !important;
-  bottom: 68px !important;
+  bottom: 0px !important;
   width: 100% !important;
   color: white !important;
   color: white !important;

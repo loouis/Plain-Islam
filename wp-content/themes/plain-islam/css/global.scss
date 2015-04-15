@@ -970,7 +970,7 @@ section#lightbox{
 		.right-column{
 			float:right;
 			width:100%;
-			padding-top:70px;
+			padding-top:82px;
 			display: none;
 
 
@@ -1061,6 +1061,10 @@ section#lightbox{
 /* ----------------------------------------------------------------- Override contact form styling */
 
 
+.wpcf7-validation-errors{
+	display:none !important;
+}
+
 input, textarea, .wpcf7-submit{
   width:100%;
   font-family:$b-font;
@@ -1138,7 +1142,7 @@ div.wpcf7{
   
   .wpcf7-response-output{
     position:absolute !important;
-    bottom:68px !important;
+    bottom:0px !important;
     width:100% !important;
     color:white !important;
     color: white !important;
