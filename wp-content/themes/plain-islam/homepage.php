@@ -123,6 +123,7 @@
 			<img src="<?php bloginfo(template_url);?>/img/close-button.png" alt="">
 		</button>
 		<div class="wrapper">
+		Video coming soon
 		</div>
 	</section>
 

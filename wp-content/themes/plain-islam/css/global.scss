@@ -589,7 +589,7 @@ section#bite-size{
 
 
 section#home-video-intro{
-	background: url(./img/video-bg-img.jpg) 50% 50% no-repeat;
+	background: url(./img/video-bg-image.png) 50% 50% no-repeat;
 	background-size:cover;
 	padding: 140px 0 140px 0;
 
@@ -877,7 +877,10 @@ section#video-lightbox{
 		max-width:900px;
 		margin: 0 auto;
 		height:500px;
-		background:red;
+		background:none;
+		text-align:center;
+		color:white;
+		font-size: 26px;
 
 
 		button.close{
