@@ -1034,7 +1034,7 @@ section#bite-size ul li:hover .bite-size__title {
 }
 section#bite-size .bite-size__view-more-button {
   position: absolute;
-  bottom: 15px;
+  bottom: 17px;
   width: 140px;
   right: 50%;
   left: 50%;
