@@ -849,6 +849,9 @@ section#hero-slider ul li {
   max-height: 600px;
   position: relative;
 }
+section#hero-slider ul li strong {
+  font-weight: bold;
+}
 section#hero-slider ul li img {
   width: 100%;
 }

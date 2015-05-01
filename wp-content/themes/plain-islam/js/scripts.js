@@ -25,6 +25,7 @@ jQuery(document).ready(function($){
 		auto: true,
 		mode: 'horizontal',
 		pause: 7000,
+		// adaptiveHeight: true,
 		onAfterSlide: function(currentSlide){
 			$("ul.bx-slider li:eq(currentSlide) h1").animate({
         opacity: 0.4,
