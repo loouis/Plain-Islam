@@ -25,6 +25,13 @@ jQuery(document).ready(function($){
 		auto: true,
 		mode: 'horizontal',
 		pause: 7000,
+		onAfterSlide: function(currentSlide){
+			$("ul.bx-slider li:eq(currentSlide) h1").animate({
+        opacity: 0.4,
+        fontSize: "3em",
+      });
+
+		}
 	});
 
 	//
