@@ -1,16 +1,22 @@
 <?php /* Template Name: Homepage */ get_header(); ?>
 
 	<main role="main">
-		
-		<section id="hero-slider" class="top-section wow fadeIn" >
-			<ul class="bx-slider">
 
-			<?php $slider = new WP_Query( array(
-           			'post_type' => 'hero-slider', 'posts_per_page' => -1,  'order' => 'ASC')); ?>
 
-           			<?php while ($slider->have_posts() ) : $slider->the_post(); ?>
-				<li>
-					<div class="wrapper">
+
+			<div class="gallery main-gallery">
+
+				<?php $slider = new WP_Query( array(
+	           			'post_type' => 'hero-slider', 'posts_per_page' => -1,  'order' => 'ASC')); ?>
+
+	       			<?php while ($slider->have_posts() ) : $slider->the_post(); ?>
+
+	       				<?php if (has_post_thumbnail( $post->ID ) ): ?>
+						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'hero-slider' ); ?>
+						<?php else : ?>
+						<?php endif; ?>
+
+					<div class="gallery-cell" style="background-image: url('<?php echo $image[0]; ?>')">
 
 						<div class="text-slider wow fadeInDown">
 
@@ -22,17 +28,19 @@
 								</span>
 								<p><?php the_field('quote_name');?></p>
 							</cite>
-						</div><!-- /text-slider -->
+						</div><!-- /text-slider --> 
+
+						<?php the_post_thumbnail('hero-slider'); ?>
 					</div>
-					<?php the_post_thumbnail('hero-slider'); ?>
-				</li>
 
 				<?php endwhile; ?>
 
 				<?php wp_reset_query();?>
-			</ul>
+
+			</div>
+
+		
 	
-		</section>
 
 		<section id="bite-size">
 			<div class="wrapper">

@@ -20,20 +20,29 @@ jQuery(document).ready(function($){
 		$('.load-more-container, .bite-size__view-more-button').fadeOut();
 	});
 
-	//Init bxslider
-	$('ul.bx-slider').bxSlider({
-		auto: true,
-		mode: 'horizontal',
-		pause: 7000,
-		// adaptiveHeight: true,
-		onAfterSlide: function(currentSlide){
-			$("ul.bx-slider li:eq(currentSlide) h1").animate({
-        opacity: 0.4,
-        fontSize: "3em",
-      });
+	// //Init bxslider
+	// $('ul.bx-slider').bxSlider({
+	// 	auto: true,
+	// 	mode: 'horizontal',
+	// 	pause: 7000,
+	// 	// adaptiveHeight: true,
+	// 	onAfterSlide: function(currentSlide){
+	// 		$("ul.bx-slider li:eq(currentSlide) h1").animate({
+ //        opacity: 0.4,
+ //        fontSize: "3em",
+ //      });
 
-		}
-	});
+	// 	}
+	// });
+
+$('.main-gallery').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: true,
+  autoPlay: 4000,
+  prevNextButtons: false
+});
 
 	//
 	$('button.burger-menu').click(function(){
