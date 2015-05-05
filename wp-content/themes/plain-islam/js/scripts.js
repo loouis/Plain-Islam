@@ -26,8 +26,13 @@ jQuery(document).ready(function($){
 		mode: 'fade',
 		pause: 7000,
 		// adaptiveHeight: true,
+
+		randomStart: 'true',
 	
 	});
+
+	var images = ['slider1.jpg', 'slider1.jpg', 'slider1.jpg', 'slider1.jpg', 'slider1.jpg', 'slider1.jpg'];
+    $('.random').css({'background-image': 'url(http://localhost:8888/plain-islam/wp-content/themes/plain-islam/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 // $('.main-gallery').flickity({
 //   // options

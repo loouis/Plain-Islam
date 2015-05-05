@@ -602,6 +602,67 @@ body, html {
   clear: both;
 }
 
+ul.bx-slider {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+ul.bx-slider strong {
+  font-weight: bold;
+}
+ul.bx-slider .text-slider {
+  position: relative;
+  float: left;
+  padding-left: 40px;
+  width: 50%;
+}
+ul.bx-slider .text-slider blockquote {
+  line-height: 40px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background: white;
+}
+@media (min-width: 768px) {
+  ul.bx-slider .text-slider blockquote {
+    padding-bottom: 0px;
+    background: none;
+  }
+}
+ul.bx-slider .text-slider blockquote p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  ul.bx-slider .text-slider blockquote p {
+    line-height: 40px;
+    font-size: 40px;
+    text-align: left;
+  }
+}
+ul.bx-slider .text-slider cite {
+  float: left;
+  margin-top: 20px;
+  display: none;
+}
+@media (min-width: 768px) {
+  ul.bx-slider .text-slider cite {
+    display: block;
+  }
+}
+ul.bx-slider .text-slider cite .quotes-icon {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+ul.bx-slider .text-slider cite p {
+  float: left;
+  padding: 3px 0 0 8px;
+  color: #92c7b1;
+  font-weight: 700;
+}
+
 .no-pad-bottom {
   padding-top: 40px;
   padding-bottom: 0;
@@ -651,7 +712,7 @@ section:after {
   margin-top: 90px;
   position: relative;
   z-index: 1;
-  height: 550px;
+  background-size: cover;
 }
 
 .featured-image-container {

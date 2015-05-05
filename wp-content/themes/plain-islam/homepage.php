@@ -2,7 +2,7 @@
 
 	<main role="main">
 
-			<section id="hero-slider" class="top-section wow fadeIn" >
+			<section id="hero-slider" class="top-section random" >
 
 				<ul class="bx-slider">
 
@@ -14,7 +14,7 @@
 						<li>
 							<div class="wrapper">
 
-								<div class="text-slider wow fadeInDown">
+								<div class="text-slider ">
 
 									<blockquote><?php the_content();?></blockquote>
 
@@ -36,15 +36,7 @@
 	
 			</section>	
 
-			<?php while(have_posts()) : the_post();?>
 
-				<div class="featured-hero-image">
-					<?php the_content();?>
-				</div>
-
-			<?php endwhile; ?>
-
-			<?php wp_reset_query();?>
 
 		<section id="bite-size">
 			<div class="wrapper">
