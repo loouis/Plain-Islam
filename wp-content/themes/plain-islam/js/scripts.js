@@ -35,14 +35,13 @@ jQuery(document).ready(function($){
 	// 	}
 	// });
 
-$('.main-gallery').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true,
-  autoPlay: true,
-  autoPlay: 4000,
-  prevNextButtons: false
-});
+// $('.main-gallery').flickity({
+//   // options
+//   cellAlign: 'left',
+//   contain: true,
+//   autoPlay: true,
+//   prevNextButtons: false
+// });
 
 	//
 	$('button.burger-menu').click(function(){

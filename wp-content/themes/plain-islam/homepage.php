@@ -2,40 +2,31 @@
 
 	<main role="main">
 
-
-
 			<div class="gallery main-gallery">
 
-				<?php $slider = new WP_Query( array(
-	           			'post_type' => 'hero-slider', 'posts_per_page' => -1,  'order' => 'ASC')); ?>
+				<div class="gallery-cell" style="background-image: url('<?php echo $image[0]; ?>')">
 
-	       			<?php while ($slider->have_posts() ) : $slider->the_post(); ?>
+					<div class="text-slider">
 
-	       				<?php if (has_post_thumbnail( $post->ID ) ): ?>
-						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'hero-slider' ); ?>
-						<?php else : ?>
-						<?php endif; ?>
+						<blockquote><?php the_content();?></blockquote>
 
-					<div class="gallery-cell" style="background-image: url('<?php echo $image[0]; ?>')">
+						<cite>
+							<span class="quotes-icon">
+								<img src="<?php bloginfo(template_url);?>/img/quote-mark.png" alt="">
+							</span>
+							<p><?php the_field('quote_name');?></p>
+						</cite>
+					</div><!-- /text-slider --> 
 
-						<div class="text-slider wow fadeInDown">
+					<?php while(have_posts()) : the_post();?>
 
-							<blockquote><?php the_content();?></blockquote>
+						<?php the_content();?>
 
-							<cite>
-								<span class="quotes-icon">
-									<img src="<?php bloginfo(template_url);?>/img/quote-mark.png" alt="">
-								</span>
-								<p><?php the_field('quote_name');?></p>
-							</cite>
-						</div><!-- /text-slider --> 
+					<?php endwhile; ?>
 
-						<?php the_post_thumbnail('hero-slider'); ?>
-					</div>
+					<?php wp_reset_query();?>
 
-				<?php endwhile; ?>
-
-				<?php wp_reset_query();?>
+				</div>
 
 			</div>
 
