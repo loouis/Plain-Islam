@@ -854,6 +854,10 @@ button.burger-menu {
   width: 100%;
   position: relative;
   float: left;
+  padding-left: 40px;
+  opacity: 0;
+  transform: translate(60px, 0px);
+  transition: all 1.6s ease-in-out;
 }
 @media (min-width: 768px) {
   .gallery-cell .text-slider {
@@ -917,6 +921,11 @@ button.burger-menu {
   float: right;
   background: red;
   width: 300px;
+}
+
+.is-selected .text-slider {
+  opacity: 1 !important;
+  transform: translate(0px, 0px);
 }
 
 /* ----------------------------------------------------------------- Bite-size section */

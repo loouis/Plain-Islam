@@ -320,6 +320,11 @@ button.burger-menu{
 				width:100%;
 				position:relative;
 				float:left;
+				padding-left:40px;
+				opacity:0;
+				transform: translate(60px, 0px);
+
+				transition: all 1.6s ease-in-out;
 
 				@include screen (medium){
 					width:40%;
@@ -389,6 +394,13 @@ button.burger-menu{
 				width:300px;
 			}
 
+}
+
+.is-selected{
+	.text-slider{
+		opacity:1 !important;
+		transform: translate(0px, 0px);
+	}
 }
 
 /* ----------------------------------------------------------------- Bite-size section */
