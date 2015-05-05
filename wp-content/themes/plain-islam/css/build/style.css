@@ -650,6 +650,28 @@ section:after {
 
 .top-section {
   margin-top: 90px;
+  position: relative;
+  z-index: 1;
+  height: 550px;
+}
+
+.featured-image-container {
+  position: relative;
+  padding-bottom: 20%;
+  height: 0;
+}
+
+.featured-hero-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 550px;
+  z-index: 0;
+  background-size: contain;
+}
+.featured-hero-image img {
+  width: 100%;
+  height: auto;
 }
 
 .button {

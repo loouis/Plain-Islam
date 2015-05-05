@@ -2,36 +2,49 @@
 
 	<main role="main">
 
-			<div class="gallery main-gallery">
+			<section id="hero-slider" class="top-section wow fadeIn" >
 
-				<div class="gallery-cell" style="background-image: url('<?php echo $image[0]; ?>')">
+				<ul class="bx-slider">
 
-					<div class="text-slider">
+					<?php $slider = new WP_Query(array(
+						'post_type' => 'hero-slider', 'posts_per_page' => -1, 'order' => 'ASC' ));?>
 
-						<blockquote><?php the_content();?></blockquote>
+						<?php while ($slider->have_posts()): $slider->the_post();?>
 
-						<cite>
-							<span class="quotes-icon">
-								<img src="<?php bloginfo(template_url);?>/img/quote-mark.png" alt="">
-							</span>
-							<p><?php the_field('quote_name');?></p>
-						</cite>
-					</div><!-- /text-slider --> 
+						<li>
+							<div class="wrapper">
 
-					<?php while(have_posts()) : the_post();?>
+								<div class="text-slider wow fadeInDown">
 
-						<?php the_content();?>
+									<blockquote><?php the_content();?></blockquote>
 
-					<?php endwhile; ?>
+									<cite>
+										<span class="quotes-icon">
+											<img src="<?php bloginfo(template_url);?>/img/quote-mark.png" alt="">
+										</span>
+										<p><?php the_field('quote_name');?></p>
+									</cite>
+								</div><!-- /text-slider -->
+							</div>
+						</li>
+
+						<?php endwhile; ?>
 
 					<?php wp_reset_query();?>
 
+				</ul>
+	
+			</section>	
+
+			<?php while(have_posts()) : the_post();?>
+
+				<div class="featured-hero-image">
+					<?php the_content();?>
 				</div>
 
-			</div>
+			<?php endwhile; ?>
 
-		
-	
+			<?php wp_reset_query();?>
 
 		<section id="bite-size">
 			<div class="wrapper">
