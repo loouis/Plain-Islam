@@ -613,14 +613,18 @@ ul.bx-slider strong {
 ul.bx-slider .text-slider {
   position: relative;
   float: left;
-  width: 50%;
+  width: 70%;
+}
+@media (min-width: 768px) {
+  ul.bx-slider .text-slider {
+    width: 50%;
+  }
 }
 ul.bx-slider .text-slider blockquote {
   line-height: 40px;
   font-size: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
-  background: white;
 }
 @media (min-width: 768px) {
   ul.bx-slider .text-slider blockquote {
@@ -629,7 +633,7 @@ ul.bx-slider .text-slider blockquote {
   }
 }
 ul.bx-slider .text-slider blockquote p {
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   padding-top: 10px;
   line-height: 22px;
