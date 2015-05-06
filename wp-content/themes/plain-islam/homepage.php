@@ -2,40 +2,39 @@
 
 	<main role="main">
 
-			<section id="hero-slider" class="top-section random" >
+		<section id="hero-slider" class="top-section random" >
 
-				<ul class="bx-slider">
+			<ul class="bx-slider">
 
-					<?php $slider = new WP_Query(array(
-						'post_type' => 'hero-slider', 'posts_per_page' => -1, 'order' => 'ASC' ));?>
+				<?php $slider = new WP_Query(array(
+					'post_type' => 'hero-slider', 'posts_per_page' => -1, 'order' => 'ASC' ));?>
 
-						<?php while ($slider->have_posts()): $slider->the_post();?>
+					<?php while ($slider->have_posts()): $slider->the_post();?>
 
-						<li>
-							<div class="wrapper">
+					<li>
+						<div class="wrapper">
 
-								<div class="text-slider ">
+							<div class="text-slider ">
 
-									<blockquote><?php the_content();?></blockquote>
+								<blockquote><?php the_content();?></blockquote>
 
-									<cite>
-										<span class="quotes-icon">
-											<img src="<?php bloginfo(template_url);?>/img/quote-mark.png" alt="">
-										</span>
-										<p><?php the_field('quote_name');?></p>
-									</cite>
-								</div><!-- /text-slider -->
-							</div>
-						</li>
+								<cite>
+									<span class="quotes-icon">
+										<img src="<?php bloginfo(template_url);?>/img/quote-mark.png" alt="">
+									</span>
+									<p><?php the_field('quote_name');?></p>
+								</cite>
+							</div><!-- /text-slider -->
+						</div>
+					</li>
 
-						<?php endwhile; ?>
+					<?php endwhile; ?>
 
-					<?php wp_reset_query();?>
+				<?php wp_reset_query();?>
 
-				</ul>
-	
-			</section>	
+			</ul>
 
+		</section>	
 
 
 		<section id="bite-size">

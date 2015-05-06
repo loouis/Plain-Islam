@@ -25,13 +25,14 @@ jQuery(document).ready(function($){
 		auto: true,
 		mode: 'fade',
 		pause: 7000,
+		speed: 1200,
 		// adaptiveHeight: true,
 
 		randomStart: 'true',
 	
 	});
 
-	var images = ['slider1.jpg', 'slider1.jpg', 'slider1.jpg', 'slider1.jpg', 'slider1.jpg', 'slider1.jpg'];
+	var images = ['test-image2.jpg', 'test-image3.jpg', 'test-image4.jpg', 'test-image5.jpg', 'test-image6.jpg', 'test-image7.jpg' ];
     $('.random').css({'background-image': 'url(http://localhost:8888/plain-islam/wp-content/themes/plain-islam/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 // $('.main-gallery').flickity({

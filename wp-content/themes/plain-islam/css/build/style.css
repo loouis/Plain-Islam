@@ -613,7 +613,6 @@ ul.bx-slider strong {
 ul.bx-slider .text-slider {
   position: relative;
   float: left;
-  padding-left: 40px;
   width: 50%;
 }
 ul.bx-slider .text-slider blockquote {
@@ -713,7 +712,15 @@ section:after {
   margin-top: 90px;
   position: relative;
   z-index: 1;
+  padding: 10% 0 12% 0;
   background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.bx-pager {
+  display: none;
 }
 
 .featured-image-container {
@@ -921,91 +928,6 @@ button.burger-menu {
 }
 
 /* ----------------------------------------------------------------- Hero slider */
-.gallery-cell {
-  width: 100%;
-  padding: 0;
-  margin-top: 88px;
-  background: #e7f6f0;
-}
-.gallery-cell strong {
-  font-weight: bold;
-}
-.gallery-cell img {
-  width: 100%;
-}
-.gallery-cell .text-slider {
-  width: 100%;
-  position: relative;
-  float: left;
-  padding-left: 40px;
-  opacity: 0;
-  transform: translate(60px, 0px);
-  transition: all 1.6s ease-in-out;
-}
-@media (min-width: 768px) {
-  .gallery-cell .text-slider {
-    width: 40%;
-    position: absolute;
-  }
-}
-.gallery-cell .text-slider blockquote {
-  line-height: 40px;
-  font-size: 40px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  background: white;
-}
-@media (min-width: 768px) {
-  .gallery-cell .text-slider blockquote {
-    padding-top: 25%;
-    padding-bottom: 0px;
-    background: none;
-  }
-}
-.gallery-cell .text-slider blockquote p {
-  text-align: center;
-  font-size: 20px;
-  padding-top: 10px;
-  line-height: 22px;
-}
-@media (min-width: 768px) {
-  .gallery-cell .text-slider blockquote p {
-    line-height: 40px;
-    font-size: 40px;
-    text-align: left;
-  }
-}
-.gallery-cell .text-slider cite {
-  float: left;
-  margin-top: 20px;
-  display: none;
-}
-@media (min-width: 768px) {
-  .gallery-cell .text-slider cite {
-    display: block;
-  }
-}
-.gallery-cell .text-slider cite .quotes-icon {
-  float: left;
-  width: 30px;
-  height: 30px;
-}
-.gallery-cell .text-slider cite p {
-  float: left;
-  padding: 3px 0 0 8px;
-  color: #92c7b1;
-  font-weight: 700;
-}
-.gallery-cell .slider-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 500px;
-  float: right;
-  background: red;
-  width: 300px;
-}
-
 .is-selected .text-slider {
   opacity: 1 !important;
   transform: translate(0px, 0px);
