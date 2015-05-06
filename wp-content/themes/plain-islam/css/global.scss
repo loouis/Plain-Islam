@@ -65,13 +65,13 @@ ul.bx-slider{
 			line-height:40px;
 			font-size:40px;
 			padding-top:20px;
-			padding-bottom:30px;
+			
 			// background:white;
 
 			@include screen (medium){
-				
 				padding-bottom:0px;
 				background:none;
+				padding-bottom:10px;
 			}
 			p{
 
@@ -92,8 +92,8 @@ ul.bx-slider{
 		cite{
 			float:left;
 			margin-top:20px;
-
-			display:none;
+			// display:none;
+			font-size:14px;
 
 			@include screen (medium){
 				display:block;
@@ -166,6 +166,7 @@ section{
 	margin-top:90px;
 	position:relative;
 	z-index:1;
+	background-position: 50% 50%;
 
 	padding:10% 0 12% 0;
 
