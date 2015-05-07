@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
 	});
 
 	var images = ['test-image2.jpg', 'test-image3.jpg', 'test-image4.jpg', 'test-image5.jpg', 'test-image6.jpg', 'test-image7.jpg' ];
-    $('.random').css({'background-image': 'url(http://localhost:8888/plain-islam/wp-content/themes/plain-islam/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+    $('.random').css({'background-image': 'url(http://breakthroughmedia.org/pislam/wp-content/themes/plain-islam/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
 // $('.main-gallery').flickity({
 //   // options
