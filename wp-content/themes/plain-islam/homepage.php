@@ -2,7 +2,7 @@
 
 	<main role="main">
 
-		<section id="hero-slider" class="top-section random" >
+		<section id="hero-slider" class="top-section random wow fadeIn" >
 
 			<ul class="bx-slider">
 
