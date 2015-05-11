@@ -615,6 +615,18 @@ ul.bx-slider .text-slider {
   float: left;
   width: 70%;
 }
+ul.bx-slider .text-slider .quote-name {
+  position: relative;
+}
+ul.bx-slider .text-slider .quote-name:after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: -43px;
+  top: 3px;
+  background: url("./img/superscript.png") no-repeat;
+}
 @media (min-width: 768px) {
   ul.bx-slider .text-slider {
     width: 50%;
@@ -1097,16 +1109,17 @@ section#home-video-intro p {
 /* ----------------------------------------------------------------- In depth section */
 section#in-depth {
   width: 100%;
+  background: #F4F4F4;
 }
 section#in-depth h3 {
   text-align: center;
 }
 section#in-depth h4 {
-  font-size: 26px;
+  font-size: 24px;
 }
 @media (min-width: 768px) {
   section#in-depth h4 {
-    font-size: 2em;
+    font-size: 1.625em;
   }
 }
 section#in-depth p {
@@ -1124,12 +1137,15 @@ section#in-depth .in-depth--excerpt {
   }
 }
 section#in-depth ul {
-  margin-top: 40px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 section#in-depth ul li {
   border-bottom: 1px solid #EFEFEF;
   padding: 60px 0 68px 0;
   opacity: 0.8;
+  background: white;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;

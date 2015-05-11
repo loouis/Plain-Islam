@@ -14,7 +14,7 @@
 					<li>
 						<div class="wrapper">
 
-							<div class="text-slider ">
+							<div class="text-slider">
 
 								<blockquote><?php the_content();?></blockquote>
 
@@ -22,7 +22,7 @@
 									<span class="quotes-icon">
 										<img src="<?php bloginfo(template_url);?>/img/quote-mark.png" alt="">
 									</span>
-									<p><?php the_field('quote_name');?></p>
+									<p class="quote-name"><?php the_field('quote_name');?></p>
 								</cite>
 							</div><!-- /text-slider -->
 						</div>

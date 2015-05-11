@@ -51,10 +51,23 @@ ul.bx-slider{
 
 
 	.text-slider{
-			
 		position:relative;
 		float:left;
 		width:70%;
+
+		.quote-name{
+			position:relative;
+
+			&:after{
+				content:"";
+				position:absolute;
+				height:40px;
+				width:40px;
+				right:-43px;
+				top:3px;
+				background:url('./img/superscript.png') no-repeat;
+			}
+		}
 
 		@include screen (medium){
 			width:50%;
@@ -644,16 +657,17 @@ section#home-video-intro{
 /* ----------------------------------------------------------------- In depth section */
 section#in-depth{
 	width:100%;
+	background:#F4F4F4;
 
 	h3{
 		text-align: center;
 	}
 
 	h4{
-		font-size: 26px;
+		font-size: 24px;
 
 		 @include screen (medium){
-		    font-size: em(32px);
+		    font-size: em(26px);
 		  }
 	}
 	p{
@@ -665,18 +679,21 @@ section#in-depth{
 		@include screen (medium){
 			display: block;
 			opacity:0;
-		transform: translate(0px, -10px);
-		transition: opacity .6s ease-in-out;
+			transform: translate(0px, -10px);
+			transition: opacity .6s ease-in-out;
 		}
 	}
 
 	ul{
-		margin-top:40px;
+		width:90%;
+		margin:0 auto;
+		margin-top:70px;
 
 		li{
 			border-bottom:1px solid #EFEFEF;
 			padding:60px 0 68px 0;
 			opacity:0.8;
+			background:white;
 			text-align:center;
 			padding-left:20px;
 			padding-right:20px;
