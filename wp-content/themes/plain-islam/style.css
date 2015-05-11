@@ -1004,6 +1004,9 @@ section#bite-size ul li .bite-size__title {
   -webkit-transform: translate(0px, 150px);
           transform: translate(0px, 150px);
   transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
 }
 @media (min-width: 400px) {
   section#bite-size ul li {
